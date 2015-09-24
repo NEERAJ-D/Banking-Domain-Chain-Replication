@@ -1,18 +1,12 @@
 *************************************************************
 ChainReplication Project README File
 --------------------------------------
-Implemented as CSE 535 - Aysnchronous System 
-Ashwin Tumma - atumma@cs.stonybrook.edu
+Implemented as CSE 535 - Aysnchronous System
 Neeraj Devadath - ndevadath@cs.stonybrook.edu
+Ashwin Tumma - atumma@cs.stonybrook.edu
+
 
 Phase IV - Transfers via Chain Replication
-*************************************************************
-Source Code Repository:
----------------------------
-The entire source code for the entire project is available on bitbucket.org
-For accessing the source code, fork and replicate from the following URL: 
-https://bitbucket.org/ashwin_tumma/chain-replication
-
 *************************************************************
 
 [INSTRUCTIONS]

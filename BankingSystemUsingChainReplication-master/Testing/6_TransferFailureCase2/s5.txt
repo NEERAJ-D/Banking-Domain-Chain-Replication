@@ -1,0 +1,10 @@
+[2014-11-24 04:20:35 PM] [INFO] Server [s5] Process Started with Process ID : 19215
+[2014-11-24 04:20:36 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 04:20:36 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 04:21:05 PM] [INFO] ******* Received from Master : [YOU_ARE_NEW:HEAD]
+[2014-11-24 04:21:05 PM] [INFO] ******* I, [s5] started operating as the new Head
+[2014-11-24 04:21:20 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 04:21:20 PM] [INFO] [Send Seq# = 1] Sent to [s6] [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 04:21:21 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c1.101
+[2014-11-24 04:21:21 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-24 04:21:21 PM] [INFO] Removed [RequestID = b1.c1.101] from SentObjClass

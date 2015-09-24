@@ -1,0 +1,9 @@
+[2014-10-13 08:56:23 PM] [INFO] Server [s3] Process Started with Process ID : 4286
+[2014-10-13 08:56:28 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 500] [Balance = 500.0]
+[2014-10-13 08:56:28 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 500] [Amount = 500.0]
+[2014-10-13 08:56:28 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 500] [Balance = 500.0]
+[2014-10-13 08:56:28 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.100] Sent to [s2]
+[2014-10-13 08:56:28 PM] [INFO] [Receive Seq# = 2] Received Request with [Request ID = b1.c1.102] [Outcome = InsufficientFunds] [AccountNumber = 500] [Balance = 500.0]
+[2014-10-13 08:56:28 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.102] [Operation = withdraw] [Account Number = 500] [Amount = 700.0]
+[2014-10-13 08:56:28 PM] [INFO] [Send Seq# = 3] Sent to Client [Request ID = b1.c1.102] [Outcome = InsufficientFunds] [AccountNumber = 500] [Balance = 500.0]
+[2014-10-13 08:56:28 PM] [INFO] [Send Seq# = 4] Acknowledgement of [Request =  b1.c1.102] Sent to [s2]

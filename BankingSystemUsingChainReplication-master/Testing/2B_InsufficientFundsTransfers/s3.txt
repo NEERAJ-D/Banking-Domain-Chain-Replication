@@ -1,0 +1,3 @@
+[2014-11-24 10:58:02 PM] [INFO] Server [s3] Process Started with Process ID : 9441
+[2014-11-24 10:58:02 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 10:58:02 PM] [INFO] Sent First HeartBeat to Master

@@ -1,0 +1,271 @@
+testing.txt: 
+---------------
+This file contains the detailed descriptions of the test scenarios that were developed to test our Chain Replication code. Each test case in this file is organized in the following manner, and are separated using horizontal dashed lines. The config files, log files and directory 
+
+--------------------------------------------------------------------------------------------
+[TEST-CASE number] : Number of the test case and its title
+[DESCRIPTION]: a brief description of the test case
+[DIRECTORY] : Directory which contains the files for the test case
+[CONFIG FILE]: the configuration file which should be given as input for running this test case
+[HOW TO] : How to run Chain Replication program to get this test case done
+[EXPECTED OUTCOME]: the expected outcome of this test case
+[ACTUAL OUTCOME]: the outcome that we have obtained by running the test case on our Chain Replication Implementation
+--------------------------------------------------------------------------------------------
+
+For brevity purposes, we have listed in the below table the directory for all the test cases. Each directory contains the configuration file and the generated log files for that test case.
+----------------------------------------------------
+Test Case # |   Directory Name
+----------------------------------------------------
+1       |       1_HeadFailure
+2       |	2_TailFailure
+3	|	3_MessageLoss
+4	|	4_IntermediateFailureBasicCase
+5	|	5_IntermediateFailureScenario1
+6	|	6_IntermediateFailureScenario2
+7	|	7_ChainExtensionBasicCase
+8	| 	8_ChainExtensionFailureScenario1
+9	| 	9_ChainExtensionFailureScenario2
+----------------------------------------------------
+
+
+***************************************************************************************************
+START OF TEST CASES 
+***************************************************************************************************
+[TEST CASE 1]
+Head Failure
+
+[DESCRIPTION]
+Removal of the head by causing the head process to crash after a certain criteria is met.
+
+[DIRECTORY]
+1_HeadFailure
+
+[CONFIG FILE]
+1_HeadFailure.txt
+
+[HOW TO]
+$ ./StartMasterServerProcess.sh Testing/1_HeadFailure/1_HeadFailure.txt
+$ java client.ClientProcess c1 Testing/1_HeadFailure/1_HeadFailure.txt
+
+[EXPECTED OUTCOME]
+- The Head process should terminate after the condition specified in config file is met. 
+- Its Successor should be notified that it is the new head 
+- Clients should be notified that the head has changed, and test if the clients are sending requests to the new head appropriately.
+
+[ACTUAL OUTCOME]
+- The Head Process terminates correctly
+- The Successor is notified by the Master that it is new Head now.
+- Clients are notified appropriately.
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 2]
+Tail Failure
+
+[DESCRIPTION]
+Removal of the tail by causing the head process to crash after a certain criteria is met.
+
+[DIRECTORY]
+1_TailFailure
+
+[CONFIG FILE]
+1_TailFailure.txt
+
+[HOW TO]
+$ ./StartMasterServerProcess.sh Testing/1_TailFailure/1_TailFailure.txt
+$ java client.ClientProcess c1 Testing/1_TailFailure/1_TailFailure.txt
+
+[EXPECTED OUTCOME]
+- The Tail process should terminate after the condition specified in config file is met.
+- Its Predecessor should be notified that it is the new tail
+- Clients should be notified that the tail has changed, and test if the clients are sending requests to the new tail appropriately.
+
+[ACTUAL OUTCOME]
+- The tail Process terminates correctly
+- The Predecessor is notified by the Master
+- Clients are notified appropriately
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 3]
+Simulate Message Loss from client and removal using ACK
+
+[DESCRIPTION]
+When sending requests from the client, there is a loss of message in the channel. This is not caused by any crash, but due to channel issues. We simulate this test case as follows: From the Config file, we accept a parameter named: looseMsgWhenNumRequestsReachAndSetPortTo, which tells the program as to for which request it should cause a message loss. When that particular request index is processed for the first time, the message is sent to such a port which is not existence in the Chain Replication System, thereby causing a message loss in the Chain Replication system.
+
+[DIRECTORY]
+3_MessageLoss
+
+[CONFIG FILE]
+3_MessageLoss.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess.sh Testing/3_MessageLoss/3_MessageLoss.txt
+$ java client.ClientProcess c1 Testing/3_MessageLoss/3_MessageLoss.txt
+
+[EXPECTED OUTCOME]
+- The message should be lost during the first request, but not for second request
+- Upon receipt of ACK , that request should be removed.
+
+[ACTUAL OUTCOME]
+- The message is lost during the first request, but not for second request
+- Upon receipt of ACK , that request is removed, along with requests which are less than it.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 4]
+Failure of Intermediate Server - Basic Case
+[DESCRIPTION]
+Removal of failure of Internal Server and sending the Sent Obj
+
+[DIRECTORY]
+4_IntermediateFailureBasicCase
+
+[CONFIG FILE]
+4IntermediateServer_NormalCase.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess.sh Testing/4_IntermediateFailureBasicCase/4IntermediateServer_NormalCase.txt
+
+$ java client.ClientProcess c1 Testing/4_IntermediateFailureBasicCase/4IntermediateServer_NormalCase.txt
+
+[EXPECTED OUTCOME]
+- The intermediate server should be killed upon a certain condition
+- Master should send update to S+ asking for sequence number, and then inturn S- should send the sequence numbers which are larger than it
+
+[ACTUAL OUTCOME]
+Working as above.
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 5]
+
+Failure of Intermediate Server - S- also fails 
+[DESCRIPTION]
+Removal of failure of Internal Server and S-
+
+[DIRECTORY]
+5_IntermediateFailureScenario1
+
+[CONFIG FILE]
+5IntermediateServer_Failure1.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess_ForInterNExtensionFailure.sh Testing/5_IntermediateFailureScenario1/5_IntermediateFailureScenario1.txt
+
+$ java client.ClientProcess c1 Testing/5_IntermediateFailureScenario1/5_IntermediateFailureScenario1.txt
+
+[EXPECTED OUTCOME]
+- The intermediate server should be killed upon a certain condition, and then the S- should also be killed. Now, s-- should send the required updates to S+
+
+[ACTUAL OUTCOME]
+Working as above.
+
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 6]
+
+Failure of Intermediate Server - S+ also fails
+[DESCRIPTION]
+Removal of failure of Internal Server and S+
+
+[DIRECTORY]
+6_IntermediateFailureScenario2
+
+[CONFIG FILE]
+6IntermediateServer_Failure2.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess_ForInterNExtensionFailure.sh Testing/6_IntermediateFailureScenario2/6IntermediateServer_Failure2.txt
+
+$ java client.ClientProcess c1 Testing/6_IntermediateFailureScenario2/6IntermediateServer_Failure2.txt
+
+[EXPECTED OUTCOME]
+- The intermediate server should be killed upon a certain condition, and then the S+ should also be killed. Now, s++ should send the required updates to S+
+
+[ACTUAL OUTCOME]
+Working as above.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 7]
+Chain Extension - basic case
+
+[DESCRIPTION]
+Extension of Chain and sending of updates from Sent
+
+[DIRECTORY]
+7_ChainExtensionBasicCase
+
+[CONFIG FILE]
+7ChainExtensionBasic.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess.sh Testing/7_ChainExtensionBasicCase/7ChainExtensionBasic.txt
+
+$ java client.ClientProcess c1 Testing//7_ChainExtensionBasicCase/7ChainExtensionBasic.txt
+
+[EXPECTED OUTCOME]
+- Chain extension should take place and updates should be sent appropriately.
+
+[ACTUAL OUTCOME]
+Working as above.
+
+
+---------------------------------------------------------------------------------------------------
+[TEST CASE 8]
+
+Chain Extension - Failure Case 1 
+
+[DESCRIPTION]
+Extension of Chain and failure of current tail
+
+[DIRECTORY]
+8_ChainExtensionFailureScenario1
+
+[CONFIG FILE]
+8_ChainExtensionFailureScenario1.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess.sh Testing/8_ChainExtensionFailureScenario1/8_ChainExtensionFailureScenario1.txt
+
+$ java client.ClientProcess c1 Testing/8_ChainExtensionFailureScenario1/8_ChainExtensionFailureScenario1.txt
+
+[EXPECTED OUTCOME]
+- Upon failure of the current tail, the master informs the prospective server that you reinitiate the chain extension process.
+
+[ACTUAL OUTCOME]
+Working as above.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 9]
+
+Chain Extension - Failure Case 2
+
+[DESCRIPTION]
+Extension of Chain and failure of new tail 
+
+[DIRECTORY]
+9_ChainExtensionFailureScenario2
+
+[CONFIG FILE]
+9ChainExtension_Failure2.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess.sh Testing/9_ChainExtensionFailureScenario2/9ChainExtension_Failure2.txt
+
+$ java client.ClientProcess c1 Testing/9_ChainExtensionFailureScenario2/9ChainExtension_Failure2.txt
+
+[EXPECTED OUTCOME]
+- The earlier chain should be restored, and chain should operate normally.
+
+[ACTUAL OUTCOME]
+Working as above.
+---------------------------------------------------------------------------------------------------

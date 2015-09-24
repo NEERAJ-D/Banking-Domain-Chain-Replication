@@ -1,0 +1,11 @@
+[2014-11-12 09:53:47 PM] [INFO] Server [s2] Process Started with Process ID : 9152
+[2014-11-12 09:53:48 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 09:53:48 PM] [INFO] Operating with LifeTime Value of dieAfterReceiving(2)
+[2014-11-12 09:53:51 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.206] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 09:53:51 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.206] [Operation = withdraw] [Account Number =  1001] [Amount = 588.0]
+[2014-11-12 09:53:51 PM] [INFO] [Send Seq# = 1] Sent to [s3] [Request ID = b1.c1.206] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 09:53:51 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c1.206
+[2014-11-12 09:53:51 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-12 09:53:51 PM] [INFO] Removed [RequestID = b1.c1.206] from SentObjClass
+[2014-11-12 09:53:51 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.206] Sent to [s1]
+[2014-11-12 09:53:51 PM] [INFO] Initiate Killing MySelf

@@ -1,0 +1,35 @@
+Help File to be used during Demo of Transfers:
+
+1. Duplicate Requests
+Four servers
+One client c1
+
+2. Inconsistent with History Requests
+Four servers
+One client c1
+
+3. Success case with no randoms
+Six servers
+Shell script for clients
+
+4. Success case with randoms
+Six servers
+Shell script for clients - There are five clients, all clients send requests at the same time to all the chains.
+Use Clients5 Shell Script
+
+
+5. Failure Case One - Head of Chain 2 failures after receiving the request
+Five servers
+Bank 1 has 2 servers, while Bank 2 has three servers
+One client c1
+
+6. Failure Case Two - Tail of Chain 1 and then Head of Chain 2 fails
+Six servers
+Bank 1 has three servers, while Bank 2 also has three servers
+One client c1
+
+
+7. Master Test Case - Three Banks, Eighteen Clients
+Six servers
+Use CLients18 shell Script
+Check logs of c1, c5, c8 (See c6 for earlier transaction),c15

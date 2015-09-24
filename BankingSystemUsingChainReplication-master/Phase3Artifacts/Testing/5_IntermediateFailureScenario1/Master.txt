@@ -1,0 +1,17 @@
+[2014-11-12 10:06:28 PM] [INFO] Master Process Started with Process ID : 9457
+[2014-11-12 10:06:28 PM] [INFO] Master started listening Server Heartbeats
+[2014-11-12 10:06:28 PM] [INFO] Master started listening Server Notifications
+[2014-11-12 10:06:48 PM] [SEVERE] Server 3 is not responding. Concluding it has crashed. Initiating Update Chain Process
+[2014-11-12 10:06:48 PM] [INFO] Crashed Server name = [s3]
+[2014-11-12 10:06:48 PM] [INFO] Bank which was affected = [b1]
+[2014-11-12 10:06:48 PM] [INFO] Was the failed server HEAD? : false
+[2014-11-12 10:06:48 PM] [INFO] Was the failed server TAIL? : false
+[2014-11-12 10:06:48 PM] [INFO] [M to s4 (S+)]: Intermediate S+: CHANGE_YOUR_PREDECESSOR to: s2
+[2014-11-12 10:06:48 PM] [INFO] [M to s2 (S-)]: Intermediate S-: CHANGE_YOUR_SUCCESSOR to: s4. Additionally, send to S+ Items in your SENTOBJ greater than Sequence Number:[1]
+[2014-11-12 10:06:58 PM] [SEVERE] Server 2 is not responding. Concluding it has crashed. Initiating Update Chain Process
+[2014-11-12 10:06:58 PM] [INFO] Crashed Server name = [s2]
+[2014-11-12 10:06:58 PM] [INFO] Bank which was affected = [b1]
+[2014-11-12 10:06:58 PM] [INFO] Was the failed server HEAD? : false
+[2014-11-12 10:06:58 PM] [INFO] Was the failed server TAIL? : false
+[2014-11-12 10:06:58 PM] [INFO] [M to s4 (S+)]: Intermediate S+: CHANGE_YOUR_PREDECESSOR to: s1
+[2014-11-12 10:06:58 PM] [INFO] [M to s1 (S-)]: Intermediate S-: CHANGE_YOUR_SUCCESSOR to: s4. Additionally, send to S+ Items in your SENTOBJ greater than Sequence Number:[1]

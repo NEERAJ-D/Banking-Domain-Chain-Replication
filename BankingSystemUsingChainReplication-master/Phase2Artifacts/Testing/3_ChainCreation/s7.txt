@@ -1,0 +1,6 @@
+[2014-10-13 09:36:25 PM] [INFO] Server [s7] Process Started with Process ID : 6042
+[2014-10-13 09:36:57 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b3.c3.101] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-10-13 09:36:57 PM] [INFO] Deposit Request Complete for [Request ID = b3.c3.101] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-10-13 09:36:57 PM] [INFO] [Send Seq# = 1] Sent to [s8] [Request ID = b3.c3.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 100.0]
+[2014-10-13 09:36:57 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b3.c3.101
+[2014-10-13 09:36:57 PM] [INFO] Removed [RequestID = b3.c3.101] from SentObj

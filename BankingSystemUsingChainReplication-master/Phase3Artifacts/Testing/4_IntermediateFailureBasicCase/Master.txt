@@ -1,0 +1,10 @@
+[2014-11-12 09:53:47 PM] [INFO] Master Process Started with Process ID : 9150
+[2014-11-12 09:53:47 PM] [INFO] Master started listening Server Heartbeats
+[2014-11-12 09:53:47 PM] [INFO] Master started listening Server Notifications
+[2014-11-12 09:54:07 PM] [SEVERE] Server 2 is not responding. Concluding it has crashed. Initiating Update Chain Process
+[2014-11-12 09:54:07 PM] [INFO] Crashed Server name = [s2]
+[2014-11-12 09:54:07 PM] [INFO] Bank which was affected = [b1]
+[2014-11-12 09:54:07 PM] [INFO] Was the failed server HEAD? : false
+[2014-11-12 09:54:07 PM] [INFO] Was the failed server TAIL? : false
+[2014-11-12 09:54:07 PM] [INFO] [M to s3 (S+)]: Intermediate S+: CHANGE_YOUR_PREDECESSOR to: s1
+[2014-11-12 09:54:07 PM] [INFO] [M to s1 (S-)]: Intermediate S-: CHANGE_YOUR_SUCCESSOR to: s3. Additionally, send to S+ Items in your SENTOBJ greater than Sequence Number:[1]

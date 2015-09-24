@@ -1,0 +1,6 @@
+[2014-11-24 04:20:35 PM] [INFO] Server [s4] Process Started with Process ID : 19214
+[2014-11-24 04:20:35 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 04:20:35 PM] [INFO] Operating with LifeTime Value of dieAfterReceiving(1)
+[2014-11-24 04:20:52 PM] [INFO] I received transfer request from Source Bank with Request ID: [b1.c1.101]
+[2014-11-24 04:20:52 PM] [INFO] I received transfer request from Source Bank. I decide to crash during this process
+[2014-11-24 04:20:52 PM] [INFO] Initiate Killing MySelf for Transfers Failure Case 1

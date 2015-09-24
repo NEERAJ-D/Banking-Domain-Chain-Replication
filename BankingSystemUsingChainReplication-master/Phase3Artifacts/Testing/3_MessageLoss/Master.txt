@@ -1,0 +1,3 @@
+[2014-11-12 09:45:02 PM] [INFO] Master Process Started with Process ID : 8854
+[2014-11-12 09:45:02 PM] [INFO] Master started listening Server Heartbeats
+[2014-11-12 09:45:02 PM] [INFO] Master started listening Server Notifications

@@ -1,0 +1,12 @@
+[2014-11-12 09:40:29 PM] [INFO] Server [s3] Process Started with Process ID : 8615
+[2014-11-12 09:40:29 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 09:40:29 PM] [INFO] Operating with LifeTime Value of dieAfterReceiving(random) : where random Value is: [2]
+[2014-11-12 09:40:34 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 100.0]
+[2014-11-12 09:40:34 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.101] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-11-12 09:40:34 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 100.0]
+[2014-11-12 09:40:34 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.101] Sent to [s2]
+[2014-11-12 09:40:37 PM] [INFO] [Receive Seq# = 2] Received Request with [Request ID = b1.c1.102] [Outcome = Processed] [AccountNumber = 500] [Balance = 200.0]
+[2014-11-12 09:40:37 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.102] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-11-12 09:40:37 PM] [INFO] [Send Seq# = 3] Sent to Client [Request ID = b1.c1.102] [Outcome = Processed] [AccountNumber = 500] [Balance = 200.0]
+[2014-11-12 09:40:37 PM] [INFO] [Send Seq# = 4] Acknowledgement of [Request =  b1.c1.102] Sent to [s2]
+[2014-11-12 09:40:37 PM] [INFO] Initiate Killing MySelf

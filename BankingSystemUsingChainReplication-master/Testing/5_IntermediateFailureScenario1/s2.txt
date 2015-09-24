@@ -1,0 +1,20 @@
+[2014-11-12 10:06:28 PM] [INFO] Server [s2] Process Started with Process ID : 9459
+[2014-11-12 10:06:28 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 10:06:28 PM] [INFO] Operating with LifeTime Value of dieAfterSending(1000)
+[2014-11-12 10:06:35 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.208] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:06:35 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.208] [Operation = withdraw] [Account Number =  1001] [Amount = 560.0]
+[2014-11-12 10:06:35 PM] [INFO] [Send Seq# = 1] Sent to [s3] [Request ID = b1.c1.208] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:06:35 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c1.208
+[2014-11-12 10:06:35 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-12 10:06:35 PM] [INFO] Removed [RequestID = b1.c1.208] from SentObjClass
+[2014-11-12 10:06:35 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.208] Sent to [s1]
+[2014-11-12 10:06:41 PM] [INFO] [Receive Seq# = 3] Received Request with [Request ID = b1.c1.204] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:06:41 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1001] [Amount = 139.0]
+[2014-11-12 10:06:41 PM] [SEVERE] The successor was unreachable, and current server has not yet notified that successor was dead. So this request will not be forwarded to the succcessor
+[2014-11-12 10:06:41 PM] [INFO] [Send Seq# = 3] Sent to [s3] [Request ID = b1.c1.204] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:06:48 PM] [INFO] ******* Received from Master : [INTERMEDIATE S-:CHANGE_YOUR_SUCCESSOR:s4:1]
+[2014-11-12 10:06:48 PM] [INFO] ******* I, [s2] received notification from Master that my Successor has crashed. Master Sent following sequence number that was received by S+ [s4] :1
+[2014-11-12 10:06:48 PM] [INFO] Sending Updates to [s4]
+[2014-11-12 10:06:48 PM] [INFO] Send Sequence Number: 2
+[2014-11-12 10:06:48 PM] [INFO] I learnt which updates I need to send to S+.  Now I [s2] will forcefully die
+[2014-11-12 10:06:48 PM] [INFO] Initiate Killing MySelf

@@ -1,0 +1,7 @@
+[2014-11-24 10:05:31 PM] [INFO] Client [c17] Process Started with Process ID : 7770
+[2014-11-24 10:05:37 PM] [INFO] Sent Request to Head [s5] with [Request ID = b3.c17.100] [Operation = deposit] [Account Number = 440] [Amount = 100.0]
+[2014-11-24 10:05:37 PM] [INFO] Response received for [Request ID = b3.c17.100] [Outcome = Processed] [AccountNumber = 440] [Balance = 100.0]
+[2014-11-24 10:05:41 PM] [INFO] Sent Request to Head [s5] with [Request ID = b3.c17.101] [Operation = withdraw] [Account Number = 440] [Amount = 40.0]
+[2014-11-24 10:05:41 PM] [INFO] Response received for [Request ID = b3.c17.101] [Outcome = Processed] [AccountNumber = 440] [Balance = 60.0]
+[2014-11-24 10:05:45 PM] [INFO] Sent Request to Tail [s6] with [Request ID = b3.c17.102] [Operation = getBalance] [Account Number = 440] 
+[2014-11-24 10:05:45 PM] [INFO] Response received for [Request ID = b3.c17.102] [Outcome = Processed] [AccountNumber = 440] [Balance = 60.0]

@@ -1,0 +1,9 @@
+[2014-11-24 03:33:17 PM] [INFO] Client [c2] Process Started with Process ID : 14182
+[2014-11-24 03:33:20 PM] [INFO] Sent Request to Head [s1] with [Request ID = b1.c2.200] [Operation = deposit] [Account Number = 200] [Amount = 100.0]
+[2014-11-24 03:33:20 PM] [INFO] Response received for [Request ID = b1.c2.200] [Outcome = Processed] [AccountNumber = 200] [Balance = 100.0]
+[2014-11-24 03:33:23 PM] [INFO] Sent Request to Head [s1] with [Request ID = b1.c2.201] [Operation = transfer] [Account Number = 200] [Amount = 50.0] [DestBank = b3] [DestAccount = 900]
+[2014-11-24 03:33:24 PM] [INFO] Response received for [Request ID = b1.c2.201] [Outcome = Processed] [AccountNumber = 200] [Balance = 50.0]
+[2014-11-24 03:33:27 PM] [INFO] Sent Request to Tail [s2] with [Request ID = b1.c2.202] [Operation = getBalance] [Account Number = 200] 
+[2014-11-24 03:33:27 PM] [INFO] Response received for [Request ID = b1.c2.202] [Outcome = Processed] [AccountNumber = 200] [Balance = 50.0]
+[2014-11-24 03:33:30 PM] [INFO] Sent Request to Tail [s6] with [Request ID = b3.c2.203] [Operation = getBalance] [Account Number = 900] 
+[2014-11-24 03:33:30 PM] [INFO] Response received for [Request ID = b3.c2.203] [Outcome = Processed] [AccountNumber = 900] [Balance = 50.0]

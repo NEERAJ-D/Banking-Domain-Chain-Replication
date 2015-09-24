@@ -1,0 +1,21 @@
+[2014-10-13 09:04:43 PM] [INFO] Server [s1] Process Started with Process ID : 4627
+[2014-10-13 09:05:04 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 500] [Amount = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 500] [Amount = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] [Send Seq# = 1] Sent to [s2] [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 500] [Balance = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] [Receive Seq# = 2] Received Request with [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 500] [Amount = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] Duplicate Request : [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 500] [Amount = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] [Receive Seq# = 3] Received Acknowledgement with b1.c1.100
+[2014-10-13 09:05:04 PM] [INFO] [Send Seq# = 2] Sent to [s2] [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 500] [Balance = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] Removed [RequestID = b1.c1.100] from SentObj
+[2014-10-13 09:05:04 PM] [INFO] [Receive Seq# = 4] Received Request with [Request ID = b1.c1.101] [Operation = withdraw] [Account Number = 500] [Amount = 50.0]
+[2014-10-13 09:05:04 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.101] [Operation = withdraw] [Account Number = 500] [Amount = 50.0]
+[2014-10-13 09:05:04 PM] [INFO] [Receive Seq# = 5] Received Acknowledgement with b1.c1.100
+[2014-10-13 09:05:04 PM] [INFO] Removed [RequestID = b1.c1.100] from SentObj
+[2014-10-13 09:05:04 PM] [INFO] [Send Seq# = 3] Sent to [s2] [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 450.0]
+[2014-10-13 09:05:04 PM] [INFO] [Receive Seq# = 6] Received Request with [Request ID = b1.c1.101] [Operation = withdraw] [Account Number = 500] [Amount = 50.0]
+[2014-10-13 09:05:04 PM] [INFO] Duplicate Request : [Request ID = b1.c1.101] [Operation = withdraw] [Account Number = 500] [Amount = 50.0]
+[2014-10-13 09:05:04 PM] [INFO] [Receive Seq# = 7] Received Acknowledgement with b1.c1.101
+[2014-10-13 09:05:04 PM] [INFO] Removed [RequestID = b1.c1.101] from SentObj
+[2014-10-13 09:05:04 PM] [INFO] [Send Seq# = 4] Sent to [s2] [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 450.0]
+[2014-10-13 09:05:04 PM] [INFO] [Receive Seq# = 8] Received Acknowledgement with b1.c1.101
+[2014-10-13 09:05:04 PM] [INFO] Removed [RequestID = b1.c1.101] from SentObj

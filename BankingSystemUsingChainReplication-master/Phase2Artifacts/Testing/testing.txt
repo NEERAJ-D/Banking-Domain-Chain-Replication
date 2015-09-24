@@ -1,0 +1,472 @@
+testing.txt: 
+---------------
+This file contains the detailed descriptions of the test scenarios that were developed to test our Chain Replication code. Each test case in this file is organized in the following manner, and are separated using horizontal dashed lines. The config files, log files and directory 
+
+--------------------------------------------------------------------------------------------
+[TEST-CASE number] : Number of the test case and its title
+[DESCRIPTION]: a brief description of the test case
+[DIRECTORY] : Directory which contains the files for the test case
+[CONFIG FILE]: the configuration file which should be given as input for running this test case
+[HOW TO] : How to run Chain Replication program to get this test case done
+[EXPECTED OUTCOME]: the expected outcome of this test case
+[ACTUAL OUTCOME]: the outcome that we have obtained by running the test case on our Chain Replication Implementation
+--------------------------------------------------------------------------------------------
+
+For brevity purposes, we have listed in the below table the directory for all the test cases. Each directory contains the configuration file and the generated log files for that test case.
+----------------------------------------------------
+Test Case # |   Directory Name
+----------------------------------------------------
+1       |       1_ServerProcessesUpAndLogGeneration
+2       |	2_ClientProcessUpAndLogGeneration
+3	|	3_ChainCreation	
+4	|	4_NewAccountDepositRequest
+5	|	5_AccountDepositRequest
+6	|	6_NewAccountWithdrawRequest
+7	|	7_AccountWithdrawRequest
+8	| 	8_GetBalanceQuery
+9	|	9_InsufficientFundsRequest
+10	|	10_DuplicateRequests
+11	|	11_InconsistentWithHistory
+12	|	12_MoreTransTest
+13	|	13_RetransmitRequests
+14	|	14_RandomRequests
+----------------------------------------------------
+
+
+***************************************************************************************************
+START OF TEST CASES 
+***************************************************************************************************
+[TEST CASE 1]
+Start of server processes and generation of log files
+
+[DESCRIPTION]
+We start the server processes by running the StartServers or by running each servers individually by specifying the path of the Config file. This test case is designed to test how the server processes come up and they generate log files for themselves. 
+
+[DIRECTORY]
+1_ServerProcessesUpAndLogGeneration
+
+[CONFIG FILE]
+1_ServerProcessesUpAndLogGeneration.txt
+
+[HOW TO]
+From three different terminals launch three server processses
+
+$ java server.ServerProcess s1 Testing/1_ServerProcessesUpAndLogGeneration/1_ServerProcessesUpAndLogGeneration.txt 
+$ java server.ServerProcess s2 Testing/1_ServerProcessesUpAndLogGeneration/1_ServerProcessesUpAndLogGeneration.txt 
+$ java server.ServerProcess s3 Testing/1_ServerProcessesUpAndLogGeneration/1_ServerProcessesUpAndLogGeneration.txt 
+
+[EXPECTED OUTCOME]
+- Upon firing a 'ps -eaf | grep java' command, all the three above processes should be seen as running
+- Log files for each of the server should be created in the logs directory with the server name as their log file name
+
+[ACTUAL OUTCOME]
+- Upon firing a 'ps -eaf | grep java' command, all the three above processes are seen as running
+- Log files for each of the server are created in the logs directory with the server name as their log file name, along with the process ID of each server process listed within.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 2]
+Start of client processes and generation of log files
+
+[DESCRIPTION]
+To test the launch of client processes and generation of the log file for the client. When a client process starts up, it sends a request to the head of the of the bank of its first request.
+
+[DIRECTORY]
+2_ClientProcessUpAndLogGeneration
+
+[CONFIG FILE]
+2_ClientProcessUpAndLogGeneration.txt
+
+[HOW TO]
+From three different terminals launch three server processses, from another terminal launch the client process.
+
+$ java server.ServerProcess s1 Testing/2_ClientProcessUpAndLogGeneration/2_ClientProcessUpAndLogGeneration.txt
+$ java server.ServerProcess s2 Testing/2_ClientProcessUpAndLogGeneration/2_ClientProcessUpAndLogGeneration.txt
+$ java server.ServerProcess s3 Testing/2_ClientProcessUpAndLogGeneration/2_ClientProcessUpAndLogGeneration.txt
+
+$ java client.ClientProcess c1 Testing/2_ClientProcessUpAndLogGeneration/2_ClientProcessUpAndLogGeneration.txt 
+
+[EXPECTED OUTCOME]
+- Log files for each of the client should be created in the logs directory with the client name as their log file name
+- Log files should contain the series of activities that the client has done from sending requests to receiving the response from the tail
+
+[ACTUAL OUTCOME]
+- Log files for each of the client are created in the logs directory with the client name as their log file name, along with the process ID of each client process listed within. As seen in the log file, the getBalance query is only sent to the tail.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 3]
+Creation of chains
+
+[DESCRIPTION]
+Create multiple chains for different banks and check if each of them is operating correctly.
+
+[DIRECTORY]
+3_ChainCreation
+
+[CONFIG FILE]
+3_ChainCreation.txt
+
+[HOW TO]
+From nine different terminals launch three server processses for each chain, from another terminal launch the client processes.
+Client 1 sends to Bank 1 Chain (s1-s2-s3)
+Client 2 sends to Bank 2 Chain (s4-s5-s6)
+Client 3 sends to Bank 3 Chain (s7-s8-s9)
+
+The StartServers.java program in the root directory will also start these servers
+
+$ java server.ServerProcess s1 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java server.ServerProcess s2 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java server.ServerProcess s3 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java server.ServerProcess s4 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java server.ServerProcess s5 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java server.ServerProcess s6 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java server.ServerProcess s7 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java server.ServerProcess s8 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java server.ServerProcess s9 Testing/3_ChainCreation/3_ChainCreation.txt
+
+$ java client.ClientProcess c1 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java client.ClientProcess c2 Testing/3_ChainCreation/3_ChainCreation.txt
+$ java client.ClientProcess c3 Testing/3_ChainCreation/3_ChainCreation.txt
+
+
+[EXPECTED OUTCOME]
+- Log files for each of the server and client should be created in the logs directory. 
+- All the requests should be processed by their respective banks
+
+[ACTUAL OUTCOME]
+- Log files for each of the server and client are created in the logs directory. 
+- All the requests are processed by their respective banks.
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 4]
+Deposit to a new account
+
+[DESCRIPTION]
+The account mentioned in the request does not exist. So, create the account first and then deposit funds to it. 
+
+[DIRECTORY]
+4_NewAccountDepositRequest
+
+[CONFIG FILE]
+4_NewAccountDepositRequest.txt
+
+[HOW TO]
+
+$ java server.ServerProcess s1 Testing/4_NewAccountDepositRequest/4_NewAccountDepositRequest.txt
+$ java server.ServerProcess s2 Testing/4_NewAccountDepositRequest/4_NewAccountDepositRequest.txt
+$ java server.ServerProcess s3 Testing/4_NewAccountDepositRequest/4_NewAccountDepositRequest.txt
+
+$ java client.ClientProcess c1 Testing/4_NewAccountDepositRequest/4_NewAccountDepositRequest.txt
+
+[EXPECTED OUTCOME]
+- The log file should depict the deposit is PROCESSED and when getBalance is done, the correct balance should be returned.  
+
+[ACTUAL OUTCOME]
+- The log file depicts the deposit is PROCESSED and when getBalance is done, the correct balance is returned.  
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 5]
+Deposit to an existing account
+
+[DESCRIPTION]
+The account mentioned in the request exists. So simply add to the account.
+
+[DIRECTORY]
+5_AccountDepositRequest
+
+[CONFIG FILE]
+5_AccountDepositRequest.txt
+
+[HOW TO]
+
+$ java server.ServerProcess s1 Testing/5_AccountDepositRequest/5_AccountDepositRequest.txt
+$ java server.ServerProcess s2 Testing/5_AccountDepositRequest/5_AccountDepositRequest.txt
+$ java server.ServerProcess s3 Testing/5_AccountDepositRequest/5_AccountDepositRequest.txt
+
+$ java client.ClientProcess c1 Testing/5_AccountDepositRequest/5_AccountDepositRequest.txt
+
+[EXPECTED OUTCOME]
+- The log file should depict the deposit is PROCESSED and when getBalance is done, the correct balance should be returned.  
+
+[ACTUAL OUTCOME]
+- The log file depicts the deposit is PROCESSED and when getBalance is done, the correct balance is returned.  
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 6]
+Withdraw from a new account
+
+[DESCRIPTION]
+The account mentioned in the request does not exist, so create the account with a balance 0. Since it is withdraw operation, return Insufficient Funds message to the client.
+
+[DIRECTORY]
+6_NewAccountWithdrawRequest
+
+[CONFIG FILE]
+6_NewAccountWithdrawRequest.txt
+
+[HOW TO]
+
+$ java server.ServerProcess s1 Testing/6_NewAccountWithdrawRequest/6_NewAccountWithdrawRequest.txt
+$ java server.ServerProcess s2 Testing/6_NewAccountWithdrawRequest/6_NewAccountWithdrawRequest.txt
+$ java server.ServerProcess s3 Testing/6_NewAccountWithdrawRequest/6_NewAccountWithdrawRequest.txt
+
+$ java client.ClientProcess c1 Testing/6_NewAccountWithdrawRequest/6_NewAccountWithdrawRequest.txt
+
+[EXPECTED OUTCOME]
+- The log file should depict that the account was created with balance zero by indicating that Insufficient funds are present.
+
+[ACTUAL OUTCOME]
+- The log file depicts that the account was created with balance zero by indicating that Insufficient funds are present.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 7]
+Withdraw from an existing account
+
+[DESCRIPTION]
+The account mentioned in the request exists. So simply withdraw to the account. Both cases are shown the test case
+
+[DIRECTORY]
+7_AccountWithdrawRequest
+
+[CONFIG FILE]
+7_AccountWithdrawRequest.txt
+
+[HOW TO] 
+
+$ java server.ServerProcess s1 Testing/7_AccountWithdrawRequest/7_AccountWithdrawRequest.txt
+$ java server.ServerProcess s2 Testing/7_AccountWithdrawRequest/7_AccountWithdrawRequest.txt
+$ java server.ServerProcess s3 Testing/7_AccountWithdrawRequest/7_AccountWithdrawRequest.txt
+
+$ java client.ClientProcess c1 Testing/7_AccountWithdrawRequest/7_AccountWithdrawRequest.txt
+
+[EXPECTED OUTCOME]
+- The log file should depict the withdraw is PROCESSED and when getBalance is done, the correct balance should be returned.  
+
+[ACTUAL OUTCOME]
+- The log file depicts the withdraw is PROCESSED and when getBalance is done, the correct balance is returned.  
+
+---------------------------------------------------------------------------------------------------
+[TEST CASE 8]
+Get balance query
+
+[DESCRIPTION]
+Query for balance with a valid account and an invalid account
+
+[DIRECTORY]
+8_GetBalanceQuery
+
+[CONFIG FILE]
+8_GetBalanceQuery.txt
+
+[HOW TO]
+
+$ java server.ServerProcess s1 Testing/8_GetBalanceQuery/8_GetBalanceQuery.txt
+$ java server.ServerProcess s2 Testing/8_GetBalanceQuery/8_GetBalanceQuery.txt
+$ java server.ServerProcess s3 Testing/8_GetBalanceQuery/8_GetBalanceQuery.txt
+
+$ java client.ClientProcess c1 Testing/8_GetBalanceQuery/8_GetBalanceQuery.txt 
+
+
+[EXPECTED OUTCOME]
+- It should return the balance of the account mentioned in the request
+
+[ACTUAL OUTCOME]
+- It does return the balance of the account mentioned in the request
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 9]
+Insufficient funds 
+
+[DESCRIPTION]
+Send a request to the head asking to withdraw more amount from the account than that is currently present there.
+
+[DIRECTORY]
+9_InsufficientFundsRequest
+
+[CONFIG FILE]
+9_InsufficientFundsRequest.txt
+
+[HOW TO]
+
+$ java server.ServerProcess s1 Testing/9_InsufficientFundsRequest/9_InsufficientFundsRequest.txt
+$ java server.ServerProcess s2 Testing/9_InsufficientFundsRequest/9_InsufficientFundsRequest.txt
+$ java server.ServerProcess s3 Testing/9_InsufficientFundsRequest/9_InsufficientFundsRequest.txt
+
+$ java client.ClientProcess c1 Testing/9_InsufficientFundsRequest/9_InsufficientFundsRequest.txt
+
+
+[EXPECTED OUTCOME]
+- The client should get an Insufficient Funds response from the tail
+
+[ACTUAL OUTCOME]
+- The client does receive an Insufficient Funds response from the tail.
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 10]
+InconsistentWithHistory
+
+[DESCRIPTION]
+Send a request to the head with the same request ID, operation, amount as earlier.
+
+[DIRECTORY]
+10_DuplicateRequests
+
+[CONFIG FILE]
+10_DuplicateRequests.txt
+
+[HOW TO]
+
+$ java server.ServerProcess s1 Testing/10_DuplicateRequests/10_DuplicateRequests.txt
+$ java server.ServerProcess s2 Testing/10_DuplicateRequests/10_DuplicateRequests.txt
+$ java server.ServerProcess s3 Testing/10_DuplicateRequests/10_DuplicateRequests.txt
+
+$ java client.ClientProcess c1 Testing/10_DuplicateRequests/10_DuplicateRequests.txt
+
+[EXPECTED OUTCOME]
+- The server sends back the same reply that was sent for the original request. 
+
+[ACTUAL OUTCOME]
+- The server does send back the same reply that was sent for the original request. In the server log file also it adds that the request was Duplicate. 
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 11]
+InconsistentWithHistory
+
+[DESCRIPTION]
+Send a request to the head with the same request ID as earlier, but with a different operation and/ or a different amount 
+
+[DIRECTORY]
+11_InconsistentWithHistory
+
+[CONFIG FILE]
+11_InconsistentWithHistory.txt
+
+[HOW TO]
+
+$ java server.ServerProcess s1 Testing/11_InconsistentWithHistory/11_InconsistentWithHistory.txt
+$ java server.ServerProcess s2 Testing/11_InconsistentWithHistory/11_InconsistentWithHistory.txt
+$ java server.ServerProcess s3 Testing/11_InconsistentWithHistory/11_InconsistentWithHistory.txt
+
+$ java client.ClientProcess c1 Testing/11_InconsistentWithHistory/11_InconsistentWithHistory.txt
+
+[EXPECTED OUTCOME]
+- The client should get an InconsistentWithHistory  response from the tail. A case in which the request ID is the same, but Account Number is different, in that case, the request should be processed. 
+
+[ACTUAL OUTCOME]
+- The client does receive an InconsistentWithHistory response from the tail. When the same request ID is received from the client, but has different Account Number, then the request is NOT InconsistentWithHistory, but it is a valid request, and is processed successfully.
+
+---------------------------------------------------------------------------------------------------
+[TEST CASE 12]
+Tests with a single client sending multiple requests
+
+[DESCRIPTION]
+A single client sends multiple requests to the server as follows (all requests are pertaining to the same account)
+
+--------------------------------------------
+Operation | ReqID | Amount | Outcome & Why
+--------------------------------------------
+Deposit  | 201 | 800 | Processed - New deposit request
+Deposit  | 201 | 800 | Processed - Duplicate request
+Withdraw | 201 | 800 | InconsistentWithHistory - Conflicts with earlier deposit reqID
+Withdraw | 202 | 400 | Processed - Balance was available
+Withdraw | 203 | 999 | Insufficient Funds - Since account has only 400 left
+Deposit  | 202 | 800 | InconsistentWithHistory - Conflicts with earlier withdraw reqID
+Deposit  | 201 | 800 | Processed - Duplicate request
+--------------------------------------------
+
+[DIRECTORY]
+12_MoreTransTest
+
+[CONFIG FILE]
+12_MoreTransTest_CheckC2Client.txt
+
+[HOW TO]
+
+$ java server.ServerProcess s1 Testing/12_MoreTransTest/12_MoreTransTest_CheckC2Client.txt
+$ java server.ServerProcess s2 Testing/12_MoreTransTest/12_MoreTransTest_CheckC2Client.txt
+$ java server.ServerProcess s3 Testing/12_MoreTransTest/12_MoreTransTest_CheckC2Client.txt
+
+$ java client.ClientProcess c2 Testing/12_MoreTransTest/12_MoreTransTest_CheckC2Client.txt
+
+[EXPECTED OUTCOME]
+- The expected outcomes are marked in the table above.
+
+[ACTUAL OUTCOME]
+- Our code also gets the same outcome as mentioned in the table above.
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 13]
+Retransmit request
+
+[DESCRIPTION]
+Retransmit the request to the server if the response does not arrive within the specified timeout.
+
+[DIRECTORY]
+13_RetransmitRequests
+
+[CONFIG FILE]
+13_RetransmitRequests.txt
+
+[HOW TO]
+
+For simulation of this scenario in our case, (only for this case) we have made the intermediate server thread sleep for 5000 milliseconds, and the retranmission delay of the client is 2000. So the client does not get the response on time, and thus re-sends the request.
+
+Also, one interesting observation being that, in some of the test cases that we ran, some times the machine took long time to respond, thereby causing a retransmit to happen!
+
+java server.ServerProcess s1 Testing/13_RetransmitRequests/13_RetransmitRequests.txt
+java server.ServerProcess s2 Testing/13_RetransmitRequests/13_RetransmitRequests.txt
+java server.ServerProcess s3 Testing/13_RetransmitRequests/13_RetransmitRequests.txt
+
+java client.ClientProcess c1 Testing/13_RetransmitRequests/13_RetransmitRequests.txt
+
+[EXPECTED OUTCOME]
+- The client should wait for the response from the server till the retransmission delay timeout. After the timer expires, the client should retransmit the request to the server. 
+
+[ACTUAL OUTCOME]
+- The client waits for the response from the server till the retransmission delay timeout. After the timer expires, the client retransmits the request to the server. 
+
+---------------------------------------------------------------------------------------------------
+[TEST CASE 14]
+Random requests
+
+[DESCRIPTION]
+Test for random request generation by clients. The implementation is done as follows: 
+(i) In the requests section of the client requests, the random function is specified as follows: 
+	#random(1,10,0.4,0.4,0.2,0.0) 
+(ii) When the #random keyword is encountered, the client processing understands that it now has to create random requests
+For example: In our case, we have specified that the probability for getBalance is 0.4, so 4 requests out of 10 are generated for getBalance with random accounts and random sequence numbers. This is done for all the operations. Essentially, all three operations, viz. getBalance, deposit and withdraw hold their shares in the total number of the random requests that are generated. 
+
+(iii) Next, all these requests are shuffled using the random function created by passing the seed that we have specified in the Config file. This feature lets us send the getBalance, deposit and withdraw requests in a completely random format. 
+
+Note: 
+To achieve randomness along with testing the vital functionality of our project, we have limited the ranges of certain parameters. This is done, so that the random values that are generated are in close proximity to each other, thereby increasing the chances of having a duplicate requestID or inconsistent with history request. Following are our defined ranges: 
+Bank 		: B1
+Account Number	: [1000 - 1009]
+Balance 	: [100 - 900]
+Sequence #	: [200-210]
+
+[DIRECTORY]
+14_RandomRequests
+
+[CONFIG FILE]
+14_RandomRequests.txt
+
+[HOW TO]
+
+$ java server.ServerProcess s1 Testing/14_RandomRequests/14_RandomRequests.txt
+$ java server.ServerProcess s2 Testing/14_RandomRequests/14_RandomRequests.txt
+$ java server.ServerProcess s3 Testing/14_RandomRequests/14_RandomRequests.txt
+
+$ java client.ClientProcess c3 Testing/14_RandomRequests/14_RandomRequests.txt
+
+[EXPECTED OUTCOME]
+- The client send randomly generated requests to the server, and in this scenario as well, the functionlity should be preserved. That is, if there are duplicate requests, inconsistent with history requests, insufficient funds requests, or normal requests, they all should be processed correctly as per the desired behavior.  
+
+[ACTUAL OUTCOME]
+In all the above mentioned scenarios, we are preserving the functionality of the system. The log file in this test cases'  directory talks more about the successful outputs that we have received. 
+---------------------------------------------------------------------------------------------------

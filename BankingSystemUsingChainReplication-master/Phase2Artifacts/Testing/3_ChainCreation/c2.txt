@@ -1,0 +1,5 @@
+[2014-10-13 09:36:50 PM] [INFO] Client [c2] Process Started with Process ID : 6164
+[2014-10-13 09:36:50 PM] [INFO] Sent Request to Head with [Request ID = b2.c2.101] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-10-13 09:36:50 PM] [INFO] Response received for [Request ID = b2.c2.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 100.0]
+[2014-10-13 09:36:50 PM] [INFO] Sent Request to Tail with [Request ID = b2.c2.102] [Operation = getBalance] [Account Number = 500] 
+[2014-10-13 09:36:50 PM] [INFO] Response received for [Request ID = b2.c2.102] [Outcome = Processed] [AccountNumber = 500] [Balance = 100.0]

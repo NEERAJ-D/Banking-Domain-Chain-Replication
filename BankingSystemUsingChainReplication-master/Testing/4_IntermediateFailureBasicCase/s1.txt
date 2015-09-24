@@ -1,0 +1,63 @@
+[2014-11-12 09:53:47 PM] [INFO] Server [s1] Process Started with Process ID : 9151
+[2014-11-12 09:53:47 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 09:53:47 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-12 09:53:51 PM] [INFO] [Receive Seq# = 1] [From CLIENT] Received Request with [Request ID = b1.c1.206] [Operation = withdraw] [Account Number =  1001] [Amount = 588.0]
+[2014-11-12 09:53:51 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.206] [Operation = withdraw] [Account Number =  1001] [Amount = 588.0]
+[2014-11-12 09:53:51 PM] [INFO] [Send Seq# = 1] Sent to [s2] [Request ID = b1.c1.206] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 09:53:51 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c1.206
+[2014-11-12 09:53:51 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-12 09:53:51 PM] [INFO] Removed [RequestID = b1.c1.206] from SentObjClass
+[2014-11-12 09:53:53 PM] [INFO] [Receive Seq# = 3] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1004] [Amount = 808.0]
+[2014-11-12 09:53:53 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1004] [Amount = 808.0]
+[2014-11-12 09:53:53 PM] [SEVERE] The successor was unreachable, and current server has not yet notified that successor was dead. So this request will not be forwarded to the succcessor
+[2014-11-12 09:53:53 PM] [INFO] [Send Seq# = 2] Sent to [s2] [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 09:53:59 PM] [INFO] [Receive Seq# = 4] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1004] [Amount = 808.0]
+[2014-11-12 09:53:59 PM] [INFO] Duplicate Request : [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1004] [Amount = 808.0]
+[2014-11-12 09:53:59 PM] [SEVERE] The successor was unreachable, and current server has not yet notified that successor was dead. So this request will not be forwarded to the succcessor
+[2014-11-12 09:53:59 PM] [INFO] [Send Seq# = 3] Sent to [s2] [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 09:54:05 PM] [INFO] [Receive Seq# = 5] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1004] [Amount = 808.0]
+[2014-11-12 09:54:05 PM] [INFO] Duplicate Request : [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1004] [Amount = 808.0]
+[2014-11-12 09:54:05 PM] [SEVERE] The successor was unreachable, and current server has not yet notified that successor was dead. So this request will not be forwarded to the succcessor
+[2014-11-12 09:54:05 PM] [INFO] [Send Seq# = 4] Sent to [s2] [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 09:54:07 PM] [INFO] ******* Received from Master : [INTERMEDIATE S-:CHANGE_YOUR_SUCCESSOR:s3:1]
+[2014-11-12 09:54:07 PM] [INFO] ******* I, [s1] received notification from Master that my Successor has crashed. Master Sent following sequence number that was received by S+ [s3] :1
+[2014-11-12 09:54:07 PM] [INFO] Sending Updates to [s3]
+[2014-11-12 09:54:07 PM] [INFO] Send Sequence Number: 2
+[2014-11-12 09:54:07 PM] [INFO] Send Sequence Number: 3
+[2014-11-12 09:54:07 PM] [INFO] Send Sequence Number: 4
+[2014-11-12 09:54:07 PM] [INFO] Sent [3] SENT objects to S+
+[2014-11-12 09:54:08 PM] [INFO] [Receive Seq# = 6] Received Acknowledgement with b1.c1.209
+[2014-11-12 09:54:08 PM] [INFO] Removed Record with Sequence Number : [2]
+[2014-11-12 09:54:08 PM] [INFO] Removed Record with Sequence Number : [3]
+[2014-11-12 09:54:08 PM] [INFO] Removed Record with Sequence Number : [4]
+[2014-11-12 09:54:08 PM] [INFO] Removed [RequestID = b1.c1.209] from SentObjClass
+[2014-11-12 09:54:08 PM] [INFO] [Receive Seq# = 7] Received Acknowledgement with b1.c1.209
+[2014-11-12 09:54:08 PM] [WARNING] The record was a duplicate record and was already removed in an earlier Acknowledgement
+[2014-11-12 09:54:08 PM] [INFO] Removed [RequestID = b1.c1.209] from SentObjClass
+[2014-11-12 09:54:08 PM] [INFO] [Receive Seq# = 8] Received Acknowledgement with b1.c1.209
+[2014-11-12 09:54:08 PM] [WARNING] The record was a duplicate record and was already removed in an earlier Acknowledgement
+[2014-11-12 09:54:08 PM] [INFO] Removed [RequestID = b1.c1.209] from SentObjClass
+[2014-11-12 09:54:09 PM] [INFO] [Receive Seq# = 9] [From CLIENT] Received Request with [Request ID = b1.c1.203] [Operation = withdraw] [Account Number =  1002] [Amount = 861.0]
+[2014-11-12 09:54:09 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.203] [Operation = withdraw] [Account Number =  1002] [Amount = 861.0]
+[2014-11-12 09:54:09 PM] [INFO] [Send Seq# = 6] Sent to [s3] [Request ID = b1.c1.203] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 09:54:09 PM] [INFO] [Receive Seq# = 10] Received Acknowledgement with b1.c1.203
+[2014-11-12 09:54:09 PM] [INFO] Removed Record with Sequence Number : [5]
+[2014-11-12 09:54:09 PM] [INFO] Removed [RequestID = b1.c1.203] from SentObjClass
+[2014-11-12 09:54:10 PM] [INFO] [Receive Seq# = 11] [From CLIENT] Received Request with [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1000] [Amount = 103.0]
+[2014-11-12 09:54:10 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1000] [Amount = 103.0]
+[2014-11-12 09:54:10 PM] [INFO] [Send Seq# = 7] Sent to [s3] [Request ID = b1.c1.204] [Outcome = InsufficientFunds] [AccountNumber =  1000] [Balance = 0.0]
+[2014-11-12 09:54:10 PM] [INFO] [Receive Seq# = 12] Received Acknowledgement with b1.c1.204
+[2014-11-12 09:54:10 PM] [INFO] Removed Record with Sequence Number : [6]
+[2014-11-12 09:54:10 PM] [INFO] Removed [RequestID = b1.c1.204] from SentObjClass
+[2014-11-12 09:54:11 PM] [INFO] [Receive Seq# = 13] [From CLIENT] Received Request with [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1001] [Amount = 317.0]
+[2014-11-12 09:54:11 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1001] [Amount = 317.0]
+[2014-11-12 09:54:11 PM] [INFO] [Send Seq# = 8] Sent to [s3] [Request ID = b1.c1.204] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 09:54:11 PM] [INFO] [Receive Seq# = 14] Received Acknowledgement with b1.c1.204
+[2014-11-12 09:54:11 PM] [INFO] Removed Record with Sequence Number : [7]
+[2014-11-12 09:54:11 PM] [INFO] Removed [RequestID = b1.c1.204] from SentObjClass
+[2014-11-12 09:54:12 PM] [INFO] [Receive Seq# = 15] [From CLIENT] Received Request with [Request ID = b1.c1.207] [Operation = withdraw] [Account Number =  1001] [Amount = 777.0]
+[2014-11-12 09:54:12 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.207] [Operation = withdraw] [Account Number =  1001] [Amount = 777.0]
+[2014-11-12 09:54:12 PM] [INFO] [Send Seq# = 9] Sent to [s3] [Request ID = b1.c1.207] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 09:54:12 PM] [INFO] [Receive Seq# = 16] Received Acknowledgement with b1.c1.207
+[2014-11-12 09:54:12 PM] [INFO] Removed Record with Sequence Number : [8]
+[2014-11-12 09:54:12 PM] [INFO] Removed [RequestID = b1.c1.207] from SentObjClass

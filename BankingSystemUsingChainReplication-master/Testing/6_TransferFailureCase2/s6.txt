@@ -1,0 +1,13 @@
+[2014-11-24 04:20:35 PM] [INFO] Server [s6] Process Started with Process ID : 19216
+[2014-11-24 04:20:36 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 04:20:36 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 04:21:21 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 04:21:21 PM] [INFO] Sent to Master: What is the Tail of [b1]
+[2014-11-24 04:21:21 PM] [INFO] Received from Master: The Tail of [b1] is : [s2]
+[2014-11-24 04:21:21 PM] [INFO] Sent Acknowledgement to Source Bank [b1] with Tail [s2]
+[2014-11-24 04:21:21 PM] [INFO] Storing SENTOBJs
+[2014-11-24 04:21:21 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 04:21:21 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.101] Sent to [s5]
+[2014-11-24 04:21:29 PM] [INFO] [Receive Seq# = 2] [From CLIENT] Received Request with [Request ID = b2.c1.103] [Operation = getBalance] [Account Number = 600] 
+[2014-11-24 04:21:29 PM] [INFO] Query Request Complete for [Request ID = b2.c1.103] [Operation = getBalance] [Account Number = 600] 
+[2014-11-24 04:21:29 PM] [INFO] [Send Seq# = 3] Sent to Client [Request ID = b2.c1.103] [Outcome = Processed] [AccountNumber = 600] [Balance = 200.0]

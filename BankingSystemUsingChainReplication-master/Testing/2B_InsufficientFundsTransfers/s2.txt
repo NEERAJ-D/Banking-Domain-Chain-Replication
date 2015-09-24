@@ -1,0 +1,13 @@
+[2014-11-24 10:58:01 PM] [INFO] Server [s2] Process Started with Process ID : 9440
+[2014-11-24 10:58:02 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 10:58:02 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 10:58:08 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 10:58:08 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 100] [Amount = 500.0]
+[2014-11-24 10:58:08 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 10:58:08 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.100] Sent to [s1]
+[2014-11-24 10:58:12 PM] [INFO] [Receive Seq# = 2] Received Request with [Request ID = b1.c1.101] [Outcome = InsufficientFunds] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 10:58:12 PM] [INFO] [Send Seq# = 3] Sent to Client [Request ID = b1.c1.101] [Outcome = InsufficientFunds] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 10:58:12 PM] [INFO] [Send Seq# = 4] Acknowledgement of [Request =  b1.c1.101] Sent to [s1]
+[2014-11-24 10:58:16 PM] [INFO] [Receive Seq# = 3] [From CLIENT] Received Request with [Request ID = b1.c1.102] [Operation = getBalance] [Account Number = 100] 
+[2014-11-24 10:58:16 PM] [INFO] Query Request Complete for [Request ID = b1.c1.102] [Operation = getBalance] [Account Number = 100] 
+[2014-11-24 10:58:16 PM] [INFO] [Send Seq# = 5] Sent to Client [Request ID = b1.c1.102] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]

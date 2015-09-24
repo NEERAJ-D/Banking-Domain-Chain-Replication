@@ -1,0 +1,22 @@
+[2014-11-24 04:20:35 PM] [INFO] Server [s2] Process Started with Process ID : 19212
+[2014-11-24 04:20:35 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 04:20:35 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 04:20:47 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 04:20:47 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 100] [Amount = 500.0]
+[2014-11-24 04:20:47 PM] [INFO] [Send Seq# = 1] Sent to [s3] [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 04:20:47 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c1.100
+[2014-11-24 04:20:47 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-24 04:20:47 PM] [INFO] Removed [RequestID = b1.c1.100] from SentObjClass
+[2014-11-24 04:20:47 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.100] Sent to [s1]
+[2014-11-24 04:20:51 PM] [INFO] [Receive Seq# = 3] Received Request with [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 04:20:51 PM] [INFO] [Send Seq# = 3] Sent to [s3] [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 04:21:05 PM] [INFO] ******* Received from Master : [YOU_ARE_NEW:TAIL]
+[2014-11-24 04:21:05 PM] [INFO] ******* I, [s2] started operating as the new Tail
+[2014-11-24 04:21:20 PM] [INFO] ******* Received from Master : [TAIL:RESEND_TRANSFER_REQUEST#s5#b1.c1.101]
+[2014-11-24 04:21:21 PM] [INFO] [Receive Seq# = 4] Received Acknowledgement with b1.c1.101
+[2014-11-24 04:21:21 PM] [INFO] Removed Record with Sequence Number : [2]
+[2014-11-24 04:21:21 PM] [INFO] Removed [RequestID = b1.c1.101] from SentObjClass
+[2014-11-24 04:21:21 PM] [INFO] [Send Seq# = 5] Acknowledgement of [Request =  b1.c1.101] Sent to [s1]
+[2014-11-24 04:21:25 PM] [INFO] [Receive Seq# = 5] [From CLIENT] Received Request with [Request ID = b1.c1.102] [Operation = getBalance] [Account Number = 100] 
+[2014-11-24 04:21:25 PM] [INFO] Query Request Complete for [Request ID = b1.c1.102] [Operation = getBalance] [Account Number = 100] 
+[2014-11-24 04:21:25 PM] [INFO] [Send Seq# = 6] Sent to Client [Request ID = b1.c1.102] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]

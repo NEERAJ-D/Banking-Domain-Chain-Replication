@@ -1,0 +1,9 @@
+[2014-10-13 09:05:04 PM] [INFO] Client [c1] Process Started with Process ID : 4670
+[2014-10-13 09:05:04 PM] [INFO] Sent Request to Head with [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 500] [Amount = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] Response received for [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 500] [Balance = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] Sent Request to Head with [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 500] [Amount = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] Response received for [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 500] [Balance = 500.0]
+[2014-10-13 09:05:04 PM] [INFO] Sent Request to Head with [Request ID = b1.c1.101] [Operation = withdraw] [Account Number = 500] [Amount = 50.0]
+[2014-10-13 09:05:04 PM] [INFO] Response received for [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 450.0]
+[2014-10-13 09:05:04 PM] [INFO] Sent Request to Head with [Request ID = b1.c1.101] [Operation = withdraw] [Account Number = 500] [Amount = 50.0]
+[2014-10-13 09:05:04 PM] [INFO] Response received for [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 450.0]

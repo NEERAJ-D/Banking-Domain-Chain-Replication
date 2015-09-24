@@ -1,0 +1,7 @@
+[2014-11-24 04:48:45 PM] [INFO] Server [s6] Process Started with Process ID : 22072
+[2014-11-24 04:48:45 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 04:48:45 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 04:49:00 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b3.c5.102] [Outcome = Processed] [AccountNumber = 200] [Balance = 100.0]
+[2014-11-24 04:49:00 PM] [INFO] Deposit Request Complete for [Request ID = b3.c5.102] [Operation = deposit] [Account Number = 200] [Amount = 100.0]
+[2014-11-24 04:49:00 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b3.c5.102] [Outcome = Processed] [AccountNumber = 200] [Balance = 100.0]
+[2014-11-24 04:49:00 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b3.c5.102] Sent to [s5]

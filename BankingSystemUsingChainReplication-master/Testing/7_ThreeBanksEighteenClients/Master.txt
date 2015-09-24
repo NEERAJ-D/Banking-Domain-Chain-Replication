@@ -1,0 +1,19 @@
+[2014-11-24 10:05:22 PM] [INFO] Master Process Started with Process ID : 7631
+[2014-11-24 10:05:22 PM] [INFO] Master started listening Server Heartbeats
+[2014-11-24 10:05:22 PM] [INFO] Master started listening Server Notifications
+[2014-11-24 10:05:42 PM] [INFO] Request arrived asking Destination Bank's [b2] Head Value
+[2014-11-24 10:05:42 PM] [INFO] Sent Destination Bank's [b2] Head Value [s3] to server.
+[2014-11-24 10:05:42 PM] [INFO] Request arrived asking Source Bank's [b1] Tail Value
+[2014-11-24 10:05:42 PM] [INFO] Sent Source Bank's [b1] Tail Value [s2] to server.
+[2014-11-24 10:05:49 PM] [INFO] Request arrived asking Destination Bank's [b3] Head Value
+[2014-11-24 10:05:49 PM] [INFO] Sent Destination Bank's [b3] Head Value [s5] to server.
+[2014-11-24 10:05:49 PM] [INFO] Request arrived asking Source Bank's [b1] Tail Value
+[2014-11-24 10:05:49 PM] [INFO] Sent Source Bank's [b1] Tail Value [s2] to server.
+[2014-11-24 10:05:49 PM] [INFO] Request arrived asking Destination Bank's [b1] Head Value
+[2014-11-24 10:05:49 PM] [INFO] Sent Destination Bank's [b1] Head Value [s1] to server.
+[2014-11-24 10:05:49 PM] [INFO] Request arrived asking Source Bank's [b3] Tail Value
+[2014-11-24 10:05:49 PM] [INFO] Sent Source Bank's [b3] Tail Value [s6] to server.
+[2014-11-24 10:05:49 PM] [INFO] Request arrived asking Destination Bank's [b1] Head Value
+[2014-11-24 10:05:49 PM] [INFO] Sent Destination Bank's [b1] Head Value [s1] to server.
+[2014-11-24 10:05:49 PM] [INFO] Request arrived asking Source Bank's [b2] Tail Value
+[2014-11-24 10:05:49 PM] [INFO] Sent Source Bank's [b2] Tail Value [s4] to server.

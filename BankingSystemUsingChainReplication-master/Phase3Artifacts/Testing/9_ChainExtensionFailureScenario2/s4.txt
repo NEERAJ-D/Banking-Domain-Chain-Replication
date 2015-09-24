@@ -1,0 +1,9 @@
+[2014-11-12 10:53:42 PM] [INFO] Server [s4] Process Started with Process ID : 13334
+[2014-11-12 10:53:43 PM] [INFO] Sleeping for Time 20000 mentioned in Config File
+[2014-11-12 10:54:03 PM] [INFO] Operating with LifeTime Value of dieAfterReceiving(1)
+[2014-11-12 10:54:03 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 10:54:09 PM] [INFO] Started Receiving Hist Obj piece by piece
+[2014-11-12 10:54:09 PM] [INFO] Done with replicating Piece of Size [11] of the History Object on my side
+[2014-11-12 10:54:09 PM] [INFO] Initiate Killing MySelf
+[2014-11-12 10:54:09 PM] [INFO] Started Receiving Hist Obj piece by piece
+[2014-11-12 10:54:09 PM] [INFO] Done with replicating Piece of Size [11] of the History Object on my side

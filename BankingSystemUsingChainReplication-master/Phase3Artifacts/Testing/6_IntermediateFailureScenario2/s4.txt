@@ -1,0 +1,46 @@
+[2014-11-12 10:13:19 PM] [INFO] Server [s4] Process Started with Process ID : 9699
+[2014-11-12 10:13:19 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 10:13:19 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-12 10:13:24 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.202] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:13:24 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1002] [Amount = 728.0]
+[2014-11-12 10:13:24 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b1.c1.202] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:13:24 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.202] Sent to [s3]
+[2014-11-12 10:13:27 PM] [INFO] [Receive Seq# = 2] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = getBalance] [Account Number =  1002] 
+[2014-11-12 10:13:27 PM] [INFO] Query Request Complete for [Request ID = b1.c1.209] [Operation = getBalance] [Account Number =  1002] 
+[2014-11-12 10:13:27 PM] [INFO] [Send Seq# = 3] Sent to Client [Request ID = b1.c1.209] [Outcome = Processed] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:13:59 PM] [INFO] ******* Received from Master : [INTERMEDIATE S+:CHANGE_YOUR_PREDECESSOR:s1]
+[2014-11-12 10:13:59 PM] [INFO] ******* I, [s4] received from Master that my Precedessor has crashed
+[2014-11-12 10:13:59 PM] [INFO] ******* I, [s4] sent to Master Latest Sequence Number Received: 1
+[2014-11-12 10:13:59 PM] [INFO] [Receive Seq# = 3] Received entire SENTOBJ SENT OBJ (Objects) of Size [4] from S-
+[2014-11-12 10:13:59 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1000] [Amount = 110.0]
+[2014-11-12 10:13:59 PM] [INFO] **** Processed Request received from S-. RequestID was: b1.c1.209
+[2014-11-12 10:13:59 PM] [INFO] [Send Seq# = 4] Sent to Client [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1000] [Balance = 0.0]
+[2014-11-12 10:13:59 PM] [INFO] [Send Seq# = 5] Acknowledgement of [Request =  b1.c1.209] Sent to [s1]
+[2014-11-12 10:13:59 PM] [INFO] Duplicate Request : [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1000] [Amount = 110.0]
+[2014-11-12 10:13:59 PM] [INFO] **** Processed Request received from S-. RequestID was: b1.c1.209
+[2014-11-12 10:13:59 PM] [INFO] [Send Seq# = 6] Sent to Client [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1000] [Balance = 0.0]
+[2014-11-12 10:13:59 PM] [INFO] [Send Seq# = 7] Acknowledgement of [Request =  b1.c1.209] Sent to [s1]
+[2014-11-12 10:13:59 PM] [INFO] Duplicate Request : [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1000] [Amount = 110.0]
+[2014-11-12 10:13:59 PM] [INFO] **** Processed Request received from S-. RequestID was: b1.c1.209
+[2014-11-12 10:13:59 PM] [INFO] [Send Seq# = 8] Sent to Client [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1000] [Balance = 0.0]
+[2014-11-12 10:13:59 PM] [INFO] [Send Seq# = 9] Acknowledgement of [Request =  b1.c1.209] Sent to [s1]
+[2014-11-12 10:13:59 PM] [INFO] Duplicate Request : [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1000] [Amount = 110.0]
+[2014-11-12 10:13:59 PM] [INFO] **** Processed Request received from S-. RequestID was: b1.c1.209
+[2014-11-12 10:13:59 PM] [INFO] [Send Seq# = 10] Sent to Client [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1000] [Balance = 0.0]
+[2014-11-12 10:13:59 PM] [INFO] [Send Seq# = 11] Acknowledgement of [Request =  b1.c1.209] Sent to [s1]
+[2014-11-12 10:14:02 PM] [INFO] [Receive Seq# = 4] Received Request with [Request ID = b1.c1.201] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 10:14:02 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.201] [Operation = withdraw] [Account Number =  1004] [Amount = 788.0]
+[2014-11-12 10:14:02 PM] [INFO] [Send Seq# = 12] Sent to Client [Request ID = b1.c1.201] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 10:14:02 PM] [INFO] [Send Seq# = 13] Acknowledgement of [Request =  b1.c1.201] Sent to [s1]
+[2014-11-12 10:14:05 PM] [INFO] [Receive Seq# = 5] Received Request with [Request ID = b1.c1.205] [Outcome = InsufficientFunds] [AccountNumber =  1003] [Balance = 0.0]
+[2014-11-12 10:14:05 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.205] [Operation = withdraw] [Account Number =  1003] [Amount = 833.0]
+[2014-11-12 10:14:05 PM] [INFO] [Send Seq# = 14] Sent to Client [Request ID = b1.c1.205] [Outcome = InsufficientFunds] [AccountNumber =  1003] [Balance = 0.0]
+[2014-11-12 10:14:05 PM] [INFO] [Send Seq# = 15] Acknowledgement of [Request =  b1.c1.205] Sent to [s1]
+[2014-11-12 10:14:08 PM] [INFO] [Receive Seq# = 6] Received Request with [Request ID = b1.c1.200] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 10:14:08 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.200] [Operation = withdraw] [Account Number =  1004] [Amount = 387.0]
+[2014-11-12 10:14:08 PM] [INFO] [Send Seq# = 16] Sent to Client [Request ID = b1.c1.200] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 10:14:08 PM] [INFO] [Send Seq# = 17] Acknowledgement of [Request =  b1.c1.200] Sent to [s1]
+[2014-11-12 10:14:11 PM] [INFO] [Receive Seq# = 7] Received Request with [Request ID = b1.c1.205] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:14:11 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.205] [Operation = withdraw] [Account Number =  1002] [Amount = 632.0]
+[2014-11-12 10:14:11 PM] [INFO] [Send Seq# = 18] Sent to Client [Request ID = b1.c1.205] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:14:11 PM] [INFO] [Send Seq# = 19] Acknowledgement of [Request =  b1.c1.205] Sent to [s1]

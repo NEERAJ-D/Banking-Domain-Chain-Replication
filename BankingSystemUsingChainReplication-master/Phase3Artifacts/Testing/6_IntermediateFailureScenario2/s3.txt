@@ -1,0 +1,16 @@
+[2014-11-12 10:13:19 PM] [INFO] Server [s3] Process Started with Process ID : 9698
+[2014-11-12 10:13:19 PM] [INFO] Operating with LifeTime Value of dieAfterSending(1000)
+[2014-11-12 10:13:19 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 10:13:24 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.202] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:13:24 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1002] [Amount = 728.0]
+[2014-11-12 10:13:24 PM] [INFO] [Send Seq# = 1] Sent to [s4] [Request ID = b1.c1.202] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:13:24 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c1.202
+[2014-11-12 10:13:24 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-12 10:13:24 PM] [INFO] Removed [RequestID = b1.c1.202] from SentObjClass
+[2014-11-12 10:13:24 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.202] Sent to [s2]
+[2014-11-12 10:13:39 PM] [INFO] ******* Received from Master : [INTERMEDIATE S+:CHANGE_YOUR_PREDECESSOR:s1]
+[2014-11-12 10:13:39 PM] [INFO] ******* I, [s3] received from Master that my Precedessor has crashed
+[2014-11-12 10:13:39 PM] [INFO] ******* I, [s3] sent to Master Latest Sequence Number Received: 1
+[2014-11-12 10:13:39 PM] [INFO] [Receive Seq# = 3] Received entire SENTOBJ SENT OBJ (Objects) of Size [2] from S-
+[2014-11-12 10:13:39 PM] [INFO] I received SENTOBJ from S-. I decide to crash during this process
+[2014-11-12 10:13:39 PM] [INFO] Initiate Killing MySelf

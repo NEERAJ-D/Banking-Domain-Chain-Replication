@@ -1,0 +1,8 @@
+[2014-10-13 09:36:25 PM] [INFO] Server [s6] Process Started with Process ID : 6039
+[2014-10-13 09:36:50 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b2.c2.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 100.0]
+[2014-10-13 09:36:50 PM] [INFO] Deposit Request Complete for [Request ID = b2.c2.101] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-10-13 09:36:50 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b2.c2.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 100.0]
+[2014-10-13 09:36:50 PM] [INFO] [Receive Seq# = 2] Received Request with [Request ID = b2.c2.102] [Operation = getBalance] [Account Number = 500] 
+[2014-10-13 09:36:50 PM] [INFO] Query Request Complete for [Request ID = b2.c2.102] [Operation = getBalance] [Account Number = 500] 
+[2014-10-13 09:36:50 PM] [INFO] [Send Seq# = 2] Sent to Client [Request ID = b2.c2.102] [Outcome = Processed] [AccountNumber = 500] [Balance = 100.0]
+[2014-10-13 09:36:50 PM] [INFO] [Send Seq# = 3] Acknowledgement of [Request =  b2.c2.101] Sent to [s5]

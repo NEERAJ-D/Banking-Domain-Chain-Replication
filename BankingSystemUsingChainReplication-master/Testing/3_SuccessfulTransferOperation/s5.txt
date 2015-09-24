@@ -1,0 +1,8 @@
+[2014-11-24 03:33:06 PM] [INFO] Server [s5] Process Started with Process ID : 14062
+[2014-11-24 03:33:06 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 03:33:06 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 03:33:24 PM] [INFO] I received transfer request from Source Bank with Request ID: [b1.c2.201]
+[2014-11-24 03:33:24 PM] [INFO] [Send Seq# = 1] Sent to [s6] [Request ID = b1.c2.201] [Outcome = Processed] [AccountNumber = 200] [Balance = 50.0]
+[2014-11-24 03:33:24 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c2.201
+[2014-11-24 03:33:24 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-24 03:33:24 PM] [INFO] Removed [RequestID = b1.c2.201] from SentObjClass

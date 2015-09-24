@@ -1,0 +1,20 @@
+[2014-11-12 10:42:09 PM] [INFO] Master Process Started with Process ID : 12650
+[2014-11-12 10:42:10 PM] [INFO] Master started listening Server Heartbeats
+[2014-11-12 10:42:10 PM] [INFO] Master started listening Server Notifications
+[2014-11-12 10:42:29 PM] [INFO] Started Serving Chain Extension Request from [s4]
+[2014-11-12 10:42:29 PM] [INFO] [M to s3(CurrentTail)] YOU_ARE_NO_MORE_A_TAIL_NEW_TAIL_IS:s4
+[2014-11-12 10:42:50 PM] [SEVERE] Server 3 is not responding. Concluding it has crashed. Initiating Update Chain Process
+[2014-11-12 10:42:50 PM] [INFO] Crashed Server name = [s3]
+[2014-11-12 10:42:50 PM] [INFO] Bank which was affected = [b1]
+[2014-11-12 10:42:50 PM] [INFO] Was the failed server HEAD? : false
+[2014-11-12 10:42:50 PM] [INFO] Was the failed server TAIL? : true
+[2014-11-12 10:42:50 PM] [INFO] [M to s4(Prospective New Tail)] Reinitiate Chain Extension
+[2014-11-12 10:42:50 PM] [INFO] [M to s2(NewTail)] YOU_ARE_NEW:TAIL
+[2014-11-12 10:42:50 PM] [INFO] [M to Client] UPDATE_NOTIFICATION:b1:s1,s2
+[2014-11-12 10:42:50 PM] [INFO] [M to Client] UPDATE_NOTIFICATION:b1:s1,s2
+[2014-11-12 10:42:51 PM] [INFO] Started Serving Chain Extension Request from [s4]
+[2014-11-12 10:42:51 PM] [INFO] [M to s2(CurrentTail)] YOU_ARE_NO_MORE_A_TAIL_NEW_TAIL_IS:s4
+[2014-11-12 10:43:03 PM] [INFO] Received Notification from Prospective New Tail [s4]  that it is ready to take over as Tail. 
+[2014-11-12 10:43:03 PM] [INFO] [b1]'s new chain is: [s1,s2,s4]
+[2014-11-12 10:43:03 PM] [INFO] [M to Clients] UPDATE_NOTIFICATION:b1:s1,s2,s4
+[2014-11-12 10:43:03 PM] [INFO] [M to Clients] UPDATE_NOTIFICATION:b1:s1,s2,s4

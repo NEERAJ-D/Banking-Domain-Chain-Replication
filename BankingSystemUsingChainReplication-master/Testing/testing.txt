@@ -1,0 +1,245 @@
+testing.txt: 
+---------------
+This file contains the detailed descriptions of the test scenarios that were developed to test our Chain Replication code. Each test case in this file is organized in the following manner, and are separated using horizontal dashed lines. The config files, log files and directory 
+
+--------------------------------------------------------------------------------------------
+[TEST-CASE number] : Number of the test case and its title
+[DESCRIPTION]: a brief description of the test case
+[DIRECTORY] : Directory which contains the files for the test case
+[CONFIG FILE]: the configuration file which should be given as input for running this test case
+[HOW TO] : How to run Chain Replication program to get this test case done
+[EXPECTED OUTCOME]: the expected outcome of this test case
+[ACTUAL OUTCOME]: the outcome that we have obtained by running the test case on our Chain Replication Implementation
+--------------------------------------------------------------------------------------------
+
+For brevity purposes, we have listed in the below table the directory for all the test cases. Each directory contains the configuration file and the generated log files for that test case.
+----------------------------------------------------
+Test Case # |   Directory Name
+----------------------------------------------------
+1       |       1_DuplicateTransferRequests
+2A      |	2A_InconsistentWithHistoryTransferRequests
+2B      |	2B_InsufficientFundsTransfers	
+3	|	3_SuccessfulTransferOperation
+4	| 	4_TransferWithRandom
+5	|	5_TransferFailureCase1
+6	|	6_TransferFailureCase2
+7 	| 	7_ThreeBanksEighteenClients
+----------------------------------------------------
+
+
+***************************************************************************************************
+START OF TEST CASES 
+***************************************************************************************************
+[TEST CASE 1]
+Handle duplicate transfer requests and other duplicate requests as well.
+
+[DESCRIPTION]
+Whenever the head of the bank 1 receives a duplicate transfer request from the client.
+
+[DIRECTORY]
+1_DuplicateTransferRequests
+
+[CONFIG FILE]
+1_DuplicateTransferRequests.txt
+
+[HOW TO]
+$ ./StartMasterServerProcess_FourServers.sh Phase4ConfigFiles/1DuplicateTransferRequest.txt 1_DuplicateTransferRequests.txt 
+
+$ java client.ClientProcess c1 Testing/1_DuplicateTransferRequests/1_DuplicateTransferRequests.txt
+
+[EXPECTED OUTCOME]
+- In all cases of duplicate requests, the same reply should be sent back to the client
+
+[ACTUAL OUTCOME]
+- In all cases, Deposit, Withdraw, Transfer, the same earlier reply is sent back to the client requesting the transaction.
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 2 A]
+Inconsistent With History requests
+
+[DESCRIPTION]
+Handle Inconsistent with history requests.
+
+[DIRECTORY]
+2_InconsistentWithHistoryTransferRequests
+
+[CONFIG FILE]
+2InconstWithHistoryTransfer.txt
+
+[HOW TO]
+$ ./StartMasterServerProcess_FourServers.sh ./Phase4ConfigFiles/2InconstWithHistoryTransfer.txt
+
+$ java client.ClientProcess c1 Phase4ConfigFiles/2InconstWithHistoryTransfer.txt
+
+[EXPECTED OUTCOME]
+- In all cases of Inconsistent with history requests, InconsistentWithHistory outcome should be sent to the client.
+
+[ACTUAL OUTCOME]
+- In all cases of Inconsistent with history requests, InconsistentWithHistory outcome is sent to the client.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 2 B]
+Insufficient Funds Transfer requests
+
+[DESCRIPTION]
+Handle Insufficient funds requests.
+
+[DIRECTORY]
+2B_InsufficientFundsTransfers
+
+[CONFIG FILE]
+2InconstWithHistoryTransfer.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess_FourServers.sh Phase4ConfigFiles/2InsufficientFundsTransfer.txt
+
+$ java client.ClientProcess c1 Phase4ConfigFiles/2InsufficientFundsTransfer.txt
+
+
+[EXPECTED OUTCOME]
+- If balance is not sufficient for transfer, respond back saying that there are Insufficient Funds
+
+[ACTUAL OUTCOME]
+- When the balance of the source account is less than the amount specified in the transaciton for the transfer, the transfer is not done. A reply is sent to the client stating that there are Insufficient funds in the account to perform a transfer.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 3]
+Succesful Transfer Operation 
+
+[DESCRIPTION]
+There are three bank chains created. The transfer operations are from B1 to B2, and B1 to B3. Both the clients start requesting from the server chains, at the same time. Despite this simultaneous access, the system behaves correctly. 
+
+[DIRECTORY]
+3_SuccessfulTransferOperation
+
+[CONFIG FILE]
+3BasicCaseWithoutRandom.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess_SixProcesses.sh Phase4ConfigFiles/3BasicCaseWithoutRandom.txt
+
+$ ./ClientProcesses.sh Phase4ConfigFiles/3BasicCaseWithoutRandom.txt
+
+[EXPECTED OUTCOME]
+- All the transfer, deposit, withdraw and getbalance operations should be performed correctly, and the client should be informed correctly.
+
+[ACTUAL OUTCOME]
+- As specified in the test case, two clients request the banking operations to the above mentioned chains at the same time. Despite this concurrent access, the system behaves correctly. 
+- All the deposit, withdraw, getBalance and transfer operations are performed correctly. A  proof of which is present in the logs for the clients present in the testing directory for this test case. 
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 4]
+Successful Transfer with multiple random requests
+
+[DESCRIPTION]
+Succesful Transfer Operation with Multiple Random requests coming in.
+There are three bank chains created. The transfer operations are from B1 to B2, and B1 to B3. There are three clients created. The clients start requesting from the server chains, at the same time. Despite this simultaneous access, the system behaves correctly.
+
+[DIRECTORY]
+4_TransferWithRandom
+
+[CONFIG FILE]
+4BasicCaseWithMultipleRandom.txt
+
+[HOW TO]
+$ ./StartMasterServerProcess_SixProcesses.sh Phase4ConfigFiles/4BasicCaseWithMultipleRandom.txt
+
+$ ./ClientProcesses.sh Phase4ConfigFiles/4BasicCaseWithMultipleRandom.txt
+
+[EXPECTED OUTCOME]
+- All the transfer, deposit, withdraw and getbalance operations should be performed correctly, and the client should be informed correctly.
+
+[ACTUAL OUTCOME]
+- As specified in the test case, two clients request the banking operations to the above mentioned chains at the same time. Despite this concurrent access, the system behaves correctly.  
+- All the deposit, withdraw, getBalance and transfer operations are performed correctly. A  proof of which is present in the logs for the clients present in the testing directory for this test case.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 5]
+Failure of Head of Destination Bank 
+
+
+[DESCRIPTION]
+Failure of Head of Destination Bank upon receving the transfer request. The transfer request is then forwarded by the tail of Source bank to the new head of destination bank 
+
+[DIRECTORY]
+5_TransferFailureCase1
+
+[CONFIG FILE]
+5_FailureCase1.txt
+
+[HOW TO]
+
+$ ./StartMasterServerProcess_FiveServers.sh Phase4ConfigFiles/5FailureCase1.txt 
+
+$ java client.ClientProcess c1 Phase4ConfigFiles/5FailureCase1.txt 
+
+[EXPECTED OUTCOME]
+- When the head of the destination bank's chain crashes, its successor should take over as the new head of the chain, and the transfer request should proceed accordingly. The transfer request and all other requests that are fired on the chain should be performed correctly.
+
+[ACTUAL OUTCOME]
+- Upon receiving the transfer request from the source bank, the head of the destination bank commits suicide. Thus, the transfer request is not known to other servers of the destination bank's chain. Now, the master detects that there is a failure of the head, so the master asks the tail of the source bank to retransmit the request to the new head of the destination bank. 
+- The transfer operation is then carried out as mentioned in the test cases above.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 6]
+Failure of Tail of Source Bank and then Head of Destination Bank
+
+[DESCRIPTION]
+Failure of tail of source bank and then  Head of Destination Bank upon receving the transfer request. The transfer request is then forwarded by the new tail of Source bank to the new head of destination bank
+
+[DIRECTORY]
+6_TransferFailureCase2
+
+[CONFIG FILE]
+6_FailureCase2.txt
+
+[HOW TO]
+$ ./StartMasterServerProcess_SixProcesses.sh Phase4ConfigFiles/6FailureCase2.txt
+
+$ java client.ClientProcess c1 Phase4ConfigFiles/6FailureCase2.txt
+
+[EXPECTED OUTCOME]
+- When the tail of the source bank and then head of the destination bank's chain crashes, predecessor of tail1 and successor of head2 should take over as the new tail and new head of the chains respectively, and the transfer request should proceed accordingly. The transfer request and all other requests that are fired on the chain should be performed correctly.
+ 
+[ACTUAL OUTCOME]
+- After sending the transfer request to the head of the destination bank, the tail of the source bank crashes. The new tail is elected as per normal chain replication procedures.
+- Next, Upon receiving the transfer request from the source bank, the head of the destination bank commits suicide. Thus, the transfer request is not known to other servers of the destination bank's chain. Now, the master detects that there is a failure of the head, so the master asks the tail of the source bank to retransmit the request to the new head of the destination bank. 
+- The transfer operation is then carried out as mentioned in the test cases above.
+
+---------------------------------------------------------------------------------------------------
+
+[TEST CASE 7]
+The Master Test Case - Three Banks, 18 Clients
+
+[DESCRIPTION]
+This test case is designed to test the concurrency of the system. We create three banks, with two servers per bank, and then create six clients per bank, which gives a total of 18 clients to the system. All the clients send requests to the servers at the same time.
+In short, six clients send requests to a single bank and so on.
+
+[DIRECTORY]
+7_ThreeBanksEighteenClients
+
+[CONFIG FILE]
+7ThreeBanksEighteenClients.txt
+
+[HOW TO]
+
+./StartMasterServerProcess_SixProcesses.sh Phase4ConfigFiles/7ThreeBanksEighteenClients.txt 
+
+./ClientProcesses_18.sh Phase4ConfigFiles/7ThreeBanksEighteenClients.txt
+
+[EXPECTED OUTCOME]
+- In such high concurrent environment as well the system should perform banking operations correctly.
+
+[ACTUAL OUTCOME]
+- In this Master test case, we test the system for its scability and ability to handle concurrent requests simultaneously, yet preserving its consistency of performing banking operations. 
+- We create three banks, with two servers in the chain for each bank. There are two clients who deal with all the banks, while other 16 clients send requests to Bank 2 and Bank 3 respectively and then there are certain transfer operations happening between the banks. All these operations are done simultaneously, i.e.: all the clients are launched at the same time, thus, each of them is in a race of sending request to the head/ tail of the respective bank chain.
+- We notice that the banking operations are done correctly, a proof of which is present in the log files for this test case in the Testing directory.
+
+---------------------------------------------------------------------------------------------------

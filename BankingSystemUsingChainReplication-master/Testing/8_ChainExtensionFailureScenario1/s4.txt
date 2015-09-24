@@ -1,0 +1,56 @@
+[2014-11-12 10:42:09 PM] [INFO] Server [s4] Process Started with Process ID : 12654
+[2014-11-12 10:42:09 PM] [INFO] Sleeping for Time 20000 mentioned in Config File
+[2014-11-12 10:42:29 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 10:42:29 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-12 10:42:35 PM] [INFO] Started Receiving Hist Obj piece by piece
+[2014-11-12 10:42:35 PM] [INFO] Done with replicating Piece of Size [12] of the History Object on my side
+[2014-11-12 10:42:35 PM] [INFO] Started Receiving Hist Obj piece by piece
+[2014-11-12 10:42:35 PM] [INFO] Done with replicating Piece of Size [12] of the History Object on my side
+[2014-11-12 10:42:50 PM] [INFO] ******* Received from Master : [NEW_TAIL:REINITIATE_CHAIN_EXTENSION]
+[2014-11-12 10:42:50 PM] [INFO] ******* Earlier Tail in the chain crashed.So, the Master has sent a notification to Re-initiate Chain Extension.
+[2014-11-12 10:42:50 PM] [INFO] ******* Sending fresh Chain Extension Request to Master
+[2014-11-12 10:42:57 PM] [INFO] Started Receiving Hist Obj piece by piece
+[2014-11-12 10:42:57 PM] [INFO] Done with replicating Piece of Size [14] of the History Object on my side
+[2014-11-12 10:42:57 PM] [INFO] Started Receiving Hist Obj piece by piece
+[2014-11-12 10:42:57 PM] [INFO] Done with replicating Piece of Size [14] of the History Object on my side
+[2014-11-12 10:43:01 PM] [INFO] Received SENT OBJ with Size = 12
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1000] [Amount = 701.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.204
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.208] [Operation = withdraw] [Account Number =  1001] [Amount = 879.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.208
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1000] [Amount = 701.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.204
+[2014-11-12 10:43:01 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.207] [Operation = withdraw] [Account Number =  1002] [Amount = 859.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.207
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1004] [Amount = 115.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.204
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1002] [Amount = 638.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.202
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.208] [Operation = withdraw] [Account Number =  1001] [Amount = 492.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.208
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1004] [Amount = 115.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.204
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.202] [Operation = deposit] [Account Number =  1004] [Amount = 272.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.202
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.202
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.200] [Operation = withdraw] [Account Number =  1004] [Amount = 571.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.200
+[2014-11-12 10:43:01 PM] [INFO] Duplicate Request : [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1001] [Amount = 588.0]
+[2014-11-12 10:43:01 PM] [INFO] Processed Request received from old (current) Tail. RequestID was: b1.c1.209
+[2014-11-12 10:43:03 PM] [INFO] Received [s2:END_OF_SENT_T] Marker message from old (current) Tail
+[2014-11-12 10:43:03 PM] [INFO] Sent to Master: [s4:MASTER_I_AM_NEW_TAIL]
+[2014-11-12 10:43:03 PM] [INFO] Started the role of Tail
+[2014-11-12 10:43:03 PM] [INFO] [Receive Seq# = 7] Received Request with [Request ID = b1.c1.209] [Outcome = Processed] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:43:03 PM] [INFO] Query Request Complete for [Request ID = b1.c1.209] [Operation = getBalance] [Account Number =  1002] 
+[2014-11-12 10:43:03 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b1.c1.209] [Outcome = Processed] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:43:03 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.209] Sent to [s2]
+[2014-11-12 10:43:04 PM] [INFO] [Receive Seq# = 8] Received Request with [Request ID = b1.c1.208] [Outcome = Processed] [AccountNumber =  1000] [Balance = 1529.0]
+[2014-11-12 10:43:04 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.208] [Operation = deposit] [Account Number =  1000] [Amount = 720.0]
+[2014-11-12 10:43:04 PM] [INFO] [Send Seq# = 3] Sent to Client [Request ID = b1.c1.208] [Outcome = Processed] [AccountNumber =  1000] [Balance = 1529.0]
+[2014-11-12 10:43:04 PM] [INFO] [Send Seq# = 4] Acknowledgement of [Request =  b1.c1.208] Sent to [s2]
+[2014-11-12 10:43:05 PM] [INFO] [Receive Seq# = 9] Received Request with [Request ID = b1.c1.202] [Outcome = InconsistentWithHistory] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:43:05 PM] [INFO] [Send Seq# = 5] Sent to Client [Request ID = b1.c1.202] [Outcome = InconsistentWithHistory] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:43:05 PM] [INFO] [Send Seq# = 6] Acknowledgement of [Request =  b1.c1.202] Sent to [s2]
+[2014-11-12 10:43:06 PM] [INFO] [Receive Seq# = 10] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = getBalance] [Account Number =  1004] 
+[2014-11-12 10:43:06 PM] [INFO] Query Request Complete for [Request ID = b1.c1.209] [Operation = getBalance] [Account Number =  1004] 
+[2014-11-12 10:43:06 PM] [INFO] [Send Seq# = 7] Sent to Client [Request ID = b1.c1.209] [Outcome = Processed] [AccountNumber =  1004] [Balance = 0.0]

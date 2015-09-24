@@ -1,0 +1,14 @@
+[2014-11-24 03:25:55 PM] [INFO] Server [s1] Process Started with Process ID : 13299
+[2014-11-24 03:25:55 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 03:25:55 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 03:26:13 PM] [INFO] [Receive Seq# = 1] [From CLIENT] Received Request with [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 100] [Amount = 500.0]
+[2014-11-24 03:26:13 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 100] [Amount = 500.0]
+[2014-11-24 03:26:13 PM] [INFO] [Send Seq# = 1] Sent to [s2] [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 03:26:13 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c1.100
+[2014-11-24 03:26:13 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-24 03:26:13 PM] [INFO] Removed [RequestID = b1.c1.100] from SentObjClass
+[2014-11-24 03:26:17 PM] [INFO] [Receive Seq# = 3] [From CLIENT] Received Request with [Request ID = b1.c1.100] [Operation = transfer] [Account Number = 100] [Amount = 200.0] [DestBank = b2] [DestAccount = 600]
+[2014-11-24 03:26:17 PM] [INFO] [Send Seq# = 2] Sent to [s2] [Request ID = b1.c1.100] [Outcome = InconsistentWithHistory] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 03:26:17 PM] [INFO] [Receive Seq# = 4] Received Acknowledgement with b1.c1.100
+[2014-11-24 03:26:17 PM] [INFO] Removed Record with Sequence Number : [2]
+[2014-11-24 03:26:17 PM] [INFO] Removed [RequestID = b1.c1.100] from SentObjClass

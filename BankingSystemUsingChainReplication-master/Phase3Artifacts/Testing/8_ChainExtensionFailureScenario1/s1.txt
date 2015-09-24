@@ -1,0 +1,187 @@
+[2014-11-12 10:42:09 PM] [INFO] Server [s1] Process Started with Process ID : 12651
+[2014-11-12 10:42:10 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 10:42:10 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-12 10:42:11 PM] [INFO] [Receive Seq# = 1] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1003] [Amount = 432.0]
+[2014-11-12 10:42:11 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1003] [Amount = 432.0]
+[2014-11-12 10:42:12 PM] [INFO] [Send Seq# = 1] Sent to [s2] [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1003] [Balance = 0.0]
+[2014-11-12 10:42:12 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c1.209
+[2014-11-12 10:42:12 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-12 10:42:12 PM] [INFO] Removed [RequestID = b1.c1.209] from SentObjClass
+[2014-11-12 10:42:14 PM] [INFO] [Receive Seq# = 3] [From CLIENT] Received Request with [Request ID = b1.c1.203] [Operation = withdraw] [Account Number =  1002] [Amount = 768.0]
+[2014-11-12 10:42:14 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.203] [Operation = withdraw] [Account Number =  1002] [Amount = 768.0]
+[2014-11-12 10:42:14 PM] [INFO] [Send Seq# = 2] Sent to [s2] [Request ID = b1.c1.203] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:42:14 PM] [INFO] [Receive Seq# = 4] Received Acknowledgement with b1.c1.203
+[2014-11-12 10:42:14 PM] [INFO] Removed Record with Sequence Number : [2]
+[2014-11-12 10:42:14 PM] [INFO] Removed [RequestID = b1.c1.203] from SentObjClass
+[2014-11-12 10:42:15 PM] [INFO] [Receive Seq# = 5] [From CLIENT] Received Request with [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1003] [Amount = 427.0]
+[2014-11-12 10:42:15 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1003] [Amount = 427.0]
+[2014-11-12 10:42:15 PM] [INFO] [Send Seq# = 3] Sent to [s2] [Request ID = b1.c1.202] [Outcome = InsufficientFunds] [AccountNumber =  1003] [Balance = 0.0]
+[2014-11-12 10:42:15 PM] [INFO] [Receive Seq# = 6] Received Acknowledgement with b1.c1.202
+[2014-11-12 10:42:15 PM] [INFO] Removed Record with Sequence Number : [3]
+[2014-11-12 10:42:15 PM] [INFO] Removed [RequestID = b1.c1.202] from SentObjClass
+[2014-11-12 10:42:16 PM] [INFO] [Receive Seq# = 7] [From CLIENT] Received Request with [Request ID = b1.c1.207] [Operation = withdraw] [Account Number =  1001] [Amount = 342.0]
+[2014-11-12 10:42:16 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.207] [Operation = withdraw] [Account Number =  1001] [Amount = 342.0]
+[2014-11-12 10:42:16 PM] [INFO] [Send Seq# = 4] Sent to [s2] [Request ID = b1.c1.207] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:42:16 PM] [INFO] [Receive Seq# = 8] Received Acknowledgement with b1.c1.207
+[2014-11-12 10:42:16 PM] [INFO] Removed Record with Sequence Number : [4]
+[2014-11-12 10:42:16 PM] [INFO] Removed [RequestID = b1.c1.207] from SentObjClass
+[2014-11-12 10:42:17 PM] [INFO] [Receive Seq# = 9] [From CLIENT] Received Request with [Request ID = b1.c1.206] [Operation = withdraw] [Account Number =  1002] [Amount = 718.0]
+[2014-11-12 10:42:17 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.206] [Operation = withdraw] [Account Number =  1002] [Amount = 718.0]
+[2014-11-12 10:42:17 PM] [INFO] [Send Seq# = 5] Sent to [s2] [Request ID = b1.c1.206] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:42:17 PM] [INFO] [Receive Seq# = 10] Received Acknowledgement with b1.c1.206
+[2014-11-12 10:42:17 PM] [INFO] Removed Record with Sequence Number : [5]
+[2014-11-12 10:42:17 PM] [INFO] Removed [RequestID = b1.c1.206] from SentObjClass
+[2014-11-12 10:42:18 PM] [INFO] [Receive Seq# = 11] [From CLIENT] Received Request with [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1001] [Amount = 505.0]
+[2014-11-12 10:42:18 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1001] [Amount = 505.0]
+[2014-11-12 10:42:18 PM] [INFO] [Send Seq# = 6] Sent to [s2] [Request ID = b1.c1.204] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:42:18 PM] [INFO] [Receive Seq# = 12] Received Acknowledgement with b1.c1.204
+[2014-11-12 10:42:18 PM] [INFO] Removed Record with Sequence Number : [6]
+[2014-11-12 10:42:18 PM] [INFO] Removed [RequestID = b1.c1.204] from SentObjClass
+[2014-11-12 10:42:21 PM] [INFO] [Receive Seq# = 13] [From CLIENT] Received Request with [Request ID = b1.c1.201] [Operation = withdraw] [Account Number =  1004] [Amount = 627.0]
+[2014-11-12 10:42:21 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.201] [Operation = withdraw] [Account Number =  1004] [Amount = 627.0]
+[2014-11-12 10:42:21 PM] [INFO] [Send Seq# = 7] Sent to [s2] [Request ID = b1.c1.201] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 10:42:21 PM] [INFO] [Receive Seq# = 14] Received Acknowledgement with b1.c1.201
+[2014-11-12 10:42:21 PM] [INFO] Removed Record with Sequence Number : [7]
+[2014-11-12 10:42:21 PM] [INFO] Removed [RequestID = b1.c1.201] from SentObjClass
+[2014-11-12 10:42:22 PM] [INFO] [Receive Seq# = 15] [From CLIENT] Received Request with [Request ID = b1.c1.200] [Operation = deposit] [Account Number =  1000] [Amount = 571.0]
+[2014-11-12 10:42:22 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.200] [Operation = deposit] [Account Number =  1000] [Amount = 571.0]
+[2014-11-12 10:42:22 PM] [INFO] [Send Seq# = 8] Sent to [s2] [Request ID = b1.c1.200] [Outcome = Processed] [AccountNumber =  1000] [Balance = 571.0]
+[2014-11-12 10:42:22 PM] [INFO] [Receive Seq# = 16] Received Acknowledgement with b1.c1.200
+[2014-11-12 10:42:22 PM] [INFO] Removed Record with Sequence Number : [8]
+[2014-11-12 10:42:22 PM] [INFO] Removed [RequestID = b1.c1.200] from SentObjClass
+[2014-11-12 10:42:24 PM] [INFO] [Receive Seq# = 17] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1000] [Amount = 204.0]
+[2014-11-12 10:42:24 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1000] [Amount = 204.0]
+[2014-11-12 10:42:24 PM] [INFO] [Send Seq# = 9] Sent to [s2] [Request ID = b1.c1.209] [Outcome = Processed] [AccountNumber =  1000] [Balance = 367.0]
+[2014-11-12 10:42:24 PM] [INFO] [Receive Seq# = 18] Received Acknowledgement with b1.c1.209
+[2014-11-12 10:42:24 PM] [INFO] Removed Record with Sequence Number : [9]
+[2014-11-12 10:42:24 PM] [INFO] Removed [RequestID = b1.c1.209] from SentObjClass
+[2014-11-12 10:42:27 PM] [INFO] [Receive Seq# = 19] [From CLIENT] Received Request with [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1001] [Amount = 338.0]
+[2014-11-12 10:42:27 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1001] [Amount = 338.0]
+[2014-11-12 10:42:27 PM] [INFO] [Send Seq# = 10] Sent to [s2] [Request ID = b1.c1.202] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:42:27 PM] [INFO] [Receive Seq# = 20] Received Acknowledgement with b1.c1.202
+[2014-11-12 10:42:27 PM] [INFO] Removed Record with Sequence Number : [10]
+[2014-11-12 10:42:27 PM] [INFO] Removed [RequestID = b1.c1.202] from SentObjClass
+[2014-11-12 10:42:28 PM] [INFO] [Receive Seq# = 21] [From CLIENT] Received Request with [Request ID = b1.c1.200] [Operation = withdraw] [Account Number =  1004] [Amount = 667.0]
+[2014-11-12 10:42:28 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.200] [Operation = withdraw] [Account Number =  1004] [Amount = 667.0]
+[2014-11-12 10:42:28 PM] [INFO] [Send Seq# = 11] Sent to [s2] [Request ID = b1.c1.200] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 10:42:28 PM] [INFO] [Receive Seq# = 22] Received Acknowledgement with b1.c1.200
+[2014-11-12 10:42:28 PM] [INFO] Removed Record with Sequence Number : [11]
+[2014-11-12 10:42:28 PM] [INFO] Removed [RequestID = b1.c1.200] from SentObjClass
+[2014-11-12 10:42:29 PM] [INFO] [Receive Seq# = 23] [From CLIENT] Received Request with [Request ID = b1.c1.208] [Operation = withdraw] [Account Number =  1001] [Amount = 889.0]
+[2014-11-12 10:42:29 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.208] [Operation = withdraw] [Account Number =  1001] [Amount = 889.0]
+[2014-11-12 10:42:29 PM] [INFO] [Send Seq# = 12] Sent to [s2] [Request ID = b1.c1.208] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:42:29 PM] [INFO] [Receive Seq# = 24] Received Acknowledgement with b1.c1.208
+[2014-11-12 10:42:29 PM] [INFO] Removed Record with Sequence Number : [12]
+[2014-11-12 10:42:29 PM] [INFO] Removed [RequestID = b1.c1.208] from SentObjClass
+[2014-11-12 10:42:31 PM] [INFO] [Receive Seq# = 25] [From CLIENT] Received Request with [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1004] [Amount = 525.0]
+[2014-11-12 10:42:31 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1004] [Amount = 525.0]
+[2014-11-12 10:42:31 PM] [INFO] [Send Seq# = 13] Sent to [s2] [Request ID = b1.c1.204] [Outcome = InsufficientFunds] [AccountNumber =  1004] [Balance = 0.0]
+[2014-11-12 10:42:31 PM] [INFO] [Receive Seq# = 26] Received Acknowledgement with b1.c1.204
+[2014-11-12 10:42:31 PM] [INFO] Removed Record with Sequence Number : [13]
+[2014-11-12 10:42:31 PM] [INFO] Removed [RequestID = b1.c1.204] from SentObjClass
+[2014-11-12 10:42:32 PM] [INFO] [Receive Seq# = 27] [From CLIENT] Received Request with [Request ID = b1.c1.205] [Operation = deposit] [Account Number =  1003] [Amount = 653.0]
+[2014-11-12 10:42:32 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.205] [Operation = deposit] [Account Number =  1003] [Amount = 653.0]
+[2014-11-12 10:42:32 PM] [INFO] [Send Seq# = 14] Sent to [s2] [Request ID = b1.c1.205] [Outcome = Processed] [AccountNumber =  1003] [Balance = 653.0]
+[2014-11-12 10:42:32 PM] [INFO] [Receive Seq# = 28] Received Acknowledgement with b1.c1.205
+[2014-11-12 10:42:32 PM] [INFO] Removed Record with Sequence Number : [14]
+[2014-11-12 10:42:32 PM] [INFO] Removed [RequestID = b1.c1.205] from SentObjClass
+[2014-11-12 10:42:33 PM] [INFO] [Receive Seq# = 29] [From CLIENT] Received Request with [Request ID = b1.c1.207] [Operation = deposit] [Account Number =  1004] [Amount = 415.0]
+[2014-11-12 10:42:33 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.207] [Operation = deposit] [Account Number =  1004] [Amount = 415.0]
+[2014-11-12 10:42:33 PM] [INFO] [Send Seq# = 15] Sent to [s2] [Request ID = b1.c1.207] [Outcome = Processed] [AccountNumber =  1004] [Balance = 415.0]
+[2014-11-12 10:42:33 PM] [INFO] [Receive Seq# = 30] Received Acknowledgement with b1.c1.207
+[2014-11-12 10:42:33 PM] [INFO] Removed Record with Sequence Number : [15]
+[2014-11-12 10:42:33 PM] [INFO] Removed [RequestID = b1.c1.207] from SentObjClass
+[2014-11-12 10:42:35 PM] [INFO] [Receive Seq# = 31] [From CLIENT] Received Request with [Request ID = b1.c1.206] [Operation = withdraw] [Account Number =  1000] [Amount = 865.0]
+[2014-11-12 10:42:35 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.206] [Operation = withdraw] [Account Number =  1000] [Amount = 865.0]
+[2014-11-12 10:42:35 PM] [INFO] [Send Seq# = 16] Sent to [s2] [Request ID = b1.c1.206] [Outcome = InsufficientFunds] [AccountNumber =  1000] [Balance = 367.0]
+[2014-11-12 10:42:35 PM] [INFO] [Receive Seq# = 32] Received Acknowledgement with b1.c1.206
+[2014-11-12 10:42:35 PM] [INFO] Removed Record with Sequence Number : [16]
+[2014-11-12 10:42:35 PM] [INFO] Removed [RequestID = b1.c1.206] from SentObjClass
+[2014-11-12 10:42:36 PM] [INFO] [Receive Seq# = 33] [From CLIENT] Received Request with [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1004] [Amount = 115.0]
+[2014-11-12 10:42:36 PM] [INFO] [Send Seq# = 17] Sent to [s2] [Request ID = b1.c1.204] [Outcome = InconsistentWithHistory] [AccountNumber =  1004] [Balance = 415.0]
+[2014-11-12 10:42:39 PM] [INFO] [Receive Seq# = 34] [From CLIENT] Received Request with [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1004] [Amount = 115.0]
+[2014-11-12 10:42:39 PM] [INFO] Duplicate Request : [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1004] [Amount = 115.0]
+[2014-11-12 10:42:39 PM] [INFO] [Send Seq# = 18] Sent to [s2] [Request ID = b1.c1.204] [Outcome = InconsistentWithHistory] [AccountNumber =  1004] [Balance = 415.0]
+[2014-11-12 10:42:42 PM] [INFO] [Receive Seq# = 35] [From CLIENT] Received Request with [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1000] [Amount = 701.0]
+[2014-11-12 10:42:42 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1000] [Amount = 701.0]
+[2014-11-12 10:42:42 PM] [INFO] [Send Seq# = 19] Sent to [s2] [Request ID = b1.c1.204] [Outcome = InsufficientFunds] [AccountNumber =  1000] [Balance = 367.0]
+[2014-11-12 10:42:45 PM] [INFO] [Receive Seq# = 36] [From CLIENT] Received Request with [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1000] [Amount = 701.0]
+[2014-11-12 10:42:45 PM] [INFO] Duplicate Request : [Request ID = b1.c1.204] [Operation = withdraw] [Account Number =  1000] [Amount = 701.0]
+[2014-11-12 10:42:45 PM] [INFO] [Send Seq# = 20] Sent to [s2] [Request ID = b1.c1.204] [Outcome = InsufficientFunds] [AccountNumber =  1000] [Balance = 367.0]
+[2014-11-12 10:42:48 PM] [INFO] [Receive Seq# = 37] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1001] [Amount = 588.0]
+[2014-11-12 10:42:48 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1001] [Amount = 588.0]
+[2014-11-12 10:42:48 PM] [INFO] [Send Seq# = 21] Sent to [s2] [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:42:51 PM] [INFO] [Receive Seq# = 38] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1001] [Amount = 588.0]
+[2014-11-12 10:42:51 PM] [INFO] Duplicate Request : [Request ID = b1.c1.209] [Operation = withdraw] [Account Number =  1001] [Amount = 588.0]
+[2014-11-12 10:42:51 PM] [INFO] [Send Seq# = 22] Sent to [s2] [Request ID = b1.c1.209] [Outcome = InsufficientFunds] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:42:51 PM] [INFO] [Receive Seq# = 39] Received Acknowledgement with b1.c1.209
+[2014-11-12 10:42:51 PM] [INFO] Removed Record with Sequence Number : [22]
+[2014-11-12 10:42:51 PM] [INFO] Removed Record with Sequence Number : [20]
+[2014-11-12 10:42:51 PM] [INFO] Removed Record with Sequence Number : [19]
+[2014-11-12 10:42:51 PM] [INFO] Removed Record with Sequence Number : [18]
+[2014-11-12 10:42:51 PM] [INFO] Removed Record with Sequence Number : [17]
+[2014-11-12 10:42:51 PM] [INFO] Removed Record with Sequence Number : [21]
+[2014-11-12 10:42:51 PM] [INFO] Removed [RequestID = b1.c1.209] from SentObjClass
+[2014-11-12 10:42:52 PM] [INFO] [Receive Seq# = 40] [From CLIENT] Received Request with [Request ID = b1.c1.202] [Operation = deposit] [Account Number =  1004] [Amount = 272.0]
+[2014-11-12 10:42:52 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.202] [Operation = deposit] [Account Number =  1004] [Amount = 272.0]
+[2014-11-12 10:42:52 PM] [INFO] [Send Seq# = 23] Sent to [s2] [Request ID = b1.c1.202] [Outcome = Processed] [AccountNumber =  1004] [Balance = 687.0]
+[2014-11-12 10:42:52 PM] [INFO] [Receive Seq# = 41] Received Acknowledgement with b1.c1.202
+[2014-11-12 10:42:52 PM] [INFO] Removed Record with Sequence Number : [23]
+[2014-11-12 10:42:52 PM] [INFO] Removed [RequestID = b1.c1.202] from SentObjClass
+[2014-11-12 10:42:53 PM] [INFO] [Receive Seq# = 42] [From CLIENT] Received Request with [Request ID = b1.c1.200] [Operation = withdraw] [Account Number =  1004] [Amount = 571.0]
+[2014-11-12 10:42:53 PM] [INFO] [Send Seq# = 24] Sent to [s2] [Request ID = b1.c1.200] [Outcome = InconsistentWithHistory] [AccountNumber =  1004] [Balance = 687.0]
+[2014-11-12 10:42:53 PM] [INFO] [Receive Seq# = 43] Received Acknowledgement with b1.c1.200
+[2014-11-12 10:42:53 PM] [INFO] Removed Record with Sequence Number : [24]
+[2014-11-12 10:42:53 PM] [INFO] Removed [RequestID = b1.c1.200] from SentObjClass
+[2014-11-12 10:42:55 PM] [INFO] [Receive Seq# = 44] [From CLIENT] Received Request with [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1002] [Amount = 638.0]
+[2014-11-12 10:42:55 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1002] [Amount = 638.0]
+[2014-11-12 10:42:55 PM] [INFO] [Send Seq# = 25] Sent to [s2] [Request ID = b1.c1.202] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:42:55 PM] [INFO] [Receive Seq# = 45] Received Acknowledgement with b1.c1.202
+[2014-11-12 10:42:55 PM] [INFO] Removed Record with Sequence Number : [25]
+[2014-11-12 10:42:55 PM] [INFO] Removed [RequestID = b1.c1.202] from SentObjClass
+[2014-11-12 10:42:56 PM] [INFO] [Receive Seq# = 46] [From CLIENT] Received Request with [Request ID = b1.c1.208] [Operation = withdraw] [Account Number =  1001] [Amount = 492.0]
+[2014-11-12 10:42:56 PM] [INFO] [Send Seq# = 26] Sent to [s2] [Request ID = b1.c1.208] [Outcome = InconsistentWithHistory] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:42:56 PM] [INFO] [Receive Seq# = 47] Received Acknowledgement with b1.c1.208
+[2014-11-12 10:42:56 PM] [INFO] Removed Record with Sequence Number : [26]
+[2014-11-12 10:42:56 PM] [INFO] Removed [RequestID = b1.c1.208] from SentObjClass
+[2014-11-12 10:42:57 PM] [INFO] [Receive Seq# = 48] [From CLIENT] Received Request with [Request ID = b1.c1.208] [Operation = withdraw] [Account Number =  1001] [Amount = 879.0]
+[2014-11-12 10:42:57 PM] [INFO] [Send Seq# = 27] Sent to [s2] [Request ID = b1.c1.208] [Outcome = InconsistentWithHistory] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:42:57 PM] [INFO] [Receive Seq# = 49] Received Acknowledgement with b1.c1.208
+[2014-11-12 10:42:57 PM] [INFO] Removed Record with Sequence Number : [27]
+[2014-11-12 10:42:57 PM] [INFO] Removed [RequestID = b1.c1.208] from SentObjClass
+[2014-11-12 10:42:58 PM] [INFO] [Receive Seq# = 50] [From CLIENT] Received Request with [Request ID = b1.c1.207] [Operation = withdraw] [Account Number =  1002] [Amount = 859.0]
+[2014-11-12 10:42:58 PM] [INFO] Withdraw Request Complete for [Request ID = b1.c1.207] [Operation = withdraw] [Account Number =  1002] [Amount = 859.0]
+[2014-11-12 10:42:58 PM] [INFO] [Send Seq# = 28] Sent to [s2] [Request ID = b1.c1.207] [Outcome = InsufficientFunds] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:42:58 PM] [INFO] [Receive Seq# = 51] Received Acknowledgement with b1.c1.207
+[2014-11-12 10:42:58 PM] [INFO] Removed Record with Sequence Number : [28]
+[2014-11-12 10:42:58 PM] [INFO] Removed [RequestID = b1.c1.207] from SentObjClass
+[2014-11-12 10:42:59 PM] [INFO] [Receive Seq# = 52] [From CLIENT] Received Request with [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1004] [Amount = 361.0]
+[2014-11-12 10:42:59 PM] [INFO] [Send Seq# = 29] Sent to [s2] [Request ID = b1.c1.202] [Outcome = InconsistentWithHistory] [AccountNumber =  1004] [Balance = 687.0]
+[2014-11-12 10:42:59 PM] [INFO] [Receive Seq# = 53] Received Acknowledgement with b1.c1.202
+[2014-11-12 10:42:59 PM] [INFO] Removed Record with Sequence Number : [29]
+[2014-11-12 10:42:59 PM] [INFO] Removed [RequestID = b1.c1.202] from SentObjClass
+[2014-11-12 10:43:01 PM] [INFO] [Receive Seq# = 54] [From CLIENT] Received Request with [Request ID = b1.c1.209] [Operation = deposit] [Account Number =  1001] [Amount = 738.0]
+[2014-11-12 10:43:01 PM] [INFO] [Send Seq# = 30] Sent to [s2] [Request ID = b1.c1.209] [Outcome = InconsistentWithHistory] [AccountNumber =  1001] [Balance = 0.0]
+[2014-11-12 10:43:01 PM] [INFO] [Receive Seq# = 55] Received Acknowledgement with b1.c1.209
+[2014-11-12 10:43:01 PM] [INFO] Removed Record with Sequence Number : [30]
+[2014-11-12 10:43:01 PM] [INFO] Removed [RequestID = b1.c1.209] from SentObjClass
+[2014-11-12 10:43:02 PM] [INFO] [Receive Seq# = 56] [From CLIENT] Received Request with [Request ID = b1.c1.201] [Operation = deposit] [Account Number =  1000] [Amount = 442.0]
+[2014-11-12 10:43:02 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.201] [Operation = deposit] [Account Number =  1000] [Amount = 442.0]
+[2014-11-12 10:43:02 PM] [INFO] [Send Seq# = 31] Sent to [s2] [Request ID = b1.c1.201] [Outcome = Processed] [AccountNumber =  1000] [Balance = 809.0]
+[2014-11-12 10:43:02 PM] [INFO] [Receive Seq# = 57] Received Acknowledgement with b1.c1.201
+[2014-11-12 10:43:02 PM] [INFO] Removed Record with Sequence Number : [31]
+[2014-11-12 10:43:02 PM] [INFO] Removed [RequestID = b1.c1.201] from SentObjClass
+[2014-11-12 10:43:03 PM] [INFO] [Receive Seq# = 58] Received Acknowledgement with b1.c1.209
+[2014-11-12 10:43:03 PM] [WARNING] The record was a duplicate record and was already removed in an earlier Acknowledgement
+[2014-11-12 10:43:03 PM] [INFO] Removed [RequestID = b1.c1.209] from SentObjClass
+[2014-11-12 10:43:04 PM] [INFO] [Receive Seq# = 59] [From CLIENT] Received Request with [Request ID = b1.c1.208] [Operation = deposit] [Account Number =  1000] [Amount = 720.0]
+[2014-11-12 10:43:04 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.208] [Operation = deposit] [Account Number =  1000] [Amount = 720.0]
+[2014-11-12 10:43:04 PM] [INFO] [Send Seq# = 32] Sent to [s2] [Request ID = b1.c1.208] [Outcome = Processed] [AccountNumber =  1000] [Balance = 1529.0]
+[2014-11-12 10:43:04 PM] [INFO] [Receive Seq# = 60] Received Acknowledgement with b1.c1.208
+[2014-11-12 10:43:04 PM] [INFO] Removed Record with Sequence Number : [32]
+[2014-11-12 10:43:04 PM] [INFO] Removed [RequestID = b1.c1.208] from SentObjClass
+[2014-11-12 10:43:05 PM] [INFO] [Receive Seq# = 61] [From CLIENT] Received Request with [Request ID = b1.c1.202] [Operation = withdraw] [Account Number =  1002] [Amount = 234.0]
+[2014-11-12 10:43:05 PM] [INFO] [Send Seq# = 33] Sent to [s2] [Request ID = b1.c1.202] [Outcome = InconsistentWithHistory] [AccountNumber =  1002] [Balance = 0.0]
+[2014-11-12 10:43:05 PM] [INFO] [Receive Seq# = 62] Received Acknowledgement with b1.c1.202
+[2014-11-12 10:43:05 PM] [INFO] Removed Record with Sequence Number : [33]
+[2014-11-12 10:43:05 PM] [INFO] Removed [RequestID = b1.c1.202] from SentObjClass

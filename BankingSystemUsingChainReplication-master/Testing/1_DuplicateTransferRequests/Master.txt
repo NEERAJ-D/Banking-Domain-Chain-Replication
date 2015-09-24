@@ -1,0 +1,7 @@
+[2014-11-24 12:11:29 PM] [INFO] Master Process Started with Process ID : 6609
+[2014-11-24 12:11:29 PM] [INFO] Master started listening Server Heartbeats
+[2014-11-24 12:11:29 PM] [INFO] Master started listening Server Notifications
+[2014-11-24 12:12:09 PM] [INFO] Request arrived asking Destination Bank's [b2] Head Value
+[2014-11-24 12:12:09 PM] [INFO] Sent Destination Bank's [b2] Head Value [s3] to server.
+[2014-11-24 12:12:09 PM] [INFO] Request arrived asking Source Bank's [b1] Tail Value
+[2014-11-24 12:12:09 PM] [INFO] Sent Source Bank's [b1] Tail Value [s2] to server.

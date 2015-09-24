@@ -1,0 +1,13 @@
+[2014-11-24 04:20:35 PM] [INFO] Server [s3] Process Started with Process ID : 19213
+[2014-11-24 04:20:36 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 04:20:36 PM] [INFO] Operating with LifeTime Value of dieAfterSending(1000)
+[2014-11-24 04:20:47 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 04:20:47 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 100] [Amount = 500.0]
+[2014-11-24 04:20:47 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 04:20:47 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.100] Sent to [s2]
+[2014-11-24 04:20:51 PM] [INFO] [Receive Seq# = 2] Received Request with [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 04:20:51 PM] [INFO] Sent to Master: What is the Head of [b2]
+[2014-11-24 04:20:51 PM] [INFO] Received from Master: Head of [b2] is : [s4]
+[2014-11-24 04:20:51 PM] [INFO] Sent Transfer Request to Destination Bank [b2] with Head [s4]
+[2014-11-24 04:20:51 PM] [INFO] I sent transfer request to Destination Bank. I decide to crash during this process
+[2014-11-24 04:20:51 PM] [INFO] Initiate Killing MySelf for Transfers Failure Case 2.

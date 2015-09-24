@@ -1,0 +1,11 @@
+[2014-11-24 04:20:43 PM] [INFO] Client [c1] Process Started with Process ID : 19339
+[2014-11-24 04:20:47 PM] [INFO] Sent Request to Head [s1] with [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 100] [Amount = 500.0]
+[2014-11-24 04:20:47 PM] [INFO] Response received for [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 04:20:51 PM] [INFO] Sent Request to Head [s1] with [Request ID = b1.c1.101] [Operation = transfer] [Account Number = 100] [Amount = 200.0] [DestBank = b2] [DestAccount = 600]
+[2014-11-24 04:21:05 PM] [INFO] ******* Received from Master Update Notification: [UPDATE_NOTIFICATION:b1:s1,s2]
+[2014-11-24 04:21:05 PM] [INFO] ******* Received from Master Update Notification: [UPDATE_NOTIFICATION:b2:s5,s6]
+[2014-11-24 04:21:21 PM] [INFO] Response received for [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 04:21:25 PM] [INFO] Sent Request to Tail [s2] with [Request ID = b1.c1.102] [Operation = getBalance] [Account Number = 100] 
+[2014-11-24 04:21:25 PM] [INFO] Response received for [Request ID = b1.c1.102] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 04:21:29 PM] [INFO] Sent Request to Tail [s6] with [Request ID = b2.c1.103] [Operation = getBalance] [Account Number = 600] 
+[2014-11-24 04:21:29 PM] [INFO] Response received for [Request ID = b2.c1.103] [Outcome = Processed] [AccountNumber = 600] [Balance = 200.0]

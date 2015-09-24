@@ -1,0 +1,23 @@
+[2014-11-24 04:20:35 PM] [INFO] Master Process Started with Process ID : 19210
+[2014-11-24 04:20:35 PM] [INFO] Master started listening Server Heartbeats
+[2014-11-24 04:20:35 PM] [INFO] Master started listening Server Notifications
+[2014-11-24 04:20:51 PM] [INFO] Request arrived asking Destination Bank's [b2] Head Value
+[2014-11-24 04:20:51 PM] [INFO] Sent Destination Bank's [b2] Head Value [s4] to server.
+[2014-11-24 04:21:05 PM] [SEVERE] Server 3 is not responding. Concluding it has crashed. Initiating Update Chain Process
+[2014-11-24 04:21:05 PM] [INFO] Crashed Server name = [s3]
+[2014-11-24 04:21:05 PM] [INFO] Bank which was affected = [b1]
+[2014-11-24 04:21:05 PM] [INFO] Was the failed server HEAD? : false
+[2014-11-24 04:21:05 PM] [INFO] Was the failed server TAIL? : true
+[2014-11-24 04:21:05 PM] [INFO] [M to s2(NewTail)] YOU_ARE_NEW:TAIL
+[2014-11-24 04:21:05 PM] [INFO] [M to Client] UPDATE_NOTIFICATION:b1:s1,s2
+[2014-11-24 04:21:05 PM] [INFO] [M to Client] UPDATE_NOTIFICATION:b1:s1,s2
+[2014-11-24 04:21:05 PM] [SEVERE] Server 4 is not responding. Concluding it has crashed. Initiating Update Chain Process
+[2014-11-24 04:21:05 PM] [INFO] Crashed Server name = [s4]
+[2014-11-24 04:21:05 PM] [INFO] Bank which was affected = [b2]
+[2014-11-24 04:21:05 PM] [INFO] Was the failed server HEAD? : true
+[2014-11-24 04:21:05 PM] [INFO] Was the failed server TAIL? : false
+[2014-11-24 04:21:05 PM] [INFO] [M to s5(NewHead)] YOU_ARE_NEW:HEAD
+[2014-11-24 04:21:05 PM] [INFO] [M to Client] UPDATE_NOTIFICATION:b2:s5,s6
+[2014-11-24 04:21:05 PM] [INFO] [M to Client] UPDATE_NOTIFICATION:b2:s5,s6
+[2014-11-24 04:21:21 PM] [INFO] Request arrived asking Source Bank's [b1] Tail Value
+[2014-11-24 04:21:21 PM] [INFO] Sent Source Bank's [b1] Tail Value [s2] to server.

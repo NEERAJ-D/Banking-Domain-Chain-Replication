@@ -1,0 +1,6 @@
+[2014-11-24 10:58:01 PM] [INFO] Server [s4] Process Started with Process ID : 9442
+[2014-11-24 10:58:02 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 10:58:02 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 10:58:20 PM] [INFO] [Receive Seq# = 1] [From CLIENT] Received Request with [Request ID = b2.c1.103] [Operation = getBalance] [Account Number = 600] 
+[2014-11-24 10:58:20 PM] [INFO] Query Request Complete for [Request ID = b2.c1.103] [Operation = getBalance] [Account Number = 600] 
+[2014-11-24 10:58:21 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b2.c1.103] [Outcome = Processed] [AccountNumber = 600] [Balance = 0.0]

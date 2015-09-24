@@ -1,0 +1,16 @@
+[2014-11-12 09:37:48 PM] [INFO] Server [s1] Process Started with Process ID : 8436
+[2014-11-12 09:37:48 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-12 09:37:48 PM] [INFO] Operating with LifeTime Value of dieAfterReceiving(3)
+[2014-11-12 09:37:54 PM] [INFO] [Receive Seq# = 1] [From CLIENT] Received Request with [Request ID = b1.c1.101] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-11-12 09:37:54 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.101] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-11-12 09:37:54 PM] [INFO] [Send Seq# = 1] Sent to [s2] [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 500] [Balance = 100.0]
+[2014-11-12 09:37:54 PM] [INFO] [Receive Seq# = 2] Received Acknowledgement with b1.c1.101
+[2014-11-12 09:37:54 PM] [INFO] Removed Record with Sequence Number : [1]
+[2014-11-12 09:37:54 PM] [INFO] Removed [RequestID = b1.c1.101] from SentObjClass
+[2014-11-12 09:37:57 PM] [INFO] [Receive Seq# = 3] [From CLIENT] Received Request with [Request ID = b1.c1.102] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-11-12 09:37:57 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.102] [Operation = deposit] [Account Number = 500] [Amount = 100.0]
+[2014-11-12 09:37:57 PM] [INFO] [Send Seq# = 2] Sent to [s2] [Request ID = b1.c1.102] [Outcome = Processed] [AccountNumber = 500] [Balance = 200.0]
+[2014-11-12 09:37:57 PM] [INFO] Initiate Killing MySelf
+[2014-11-12 09:37:57 PM] [INFO] [Receive Seq# = 4] Received Acknowledgement with b1.c1.102
+[2014-11-12 09:37:57 PM] [INFO] Removed Record with Sequence Number : [2]
+[2014-11-12 09:37:57 PM] [INFO] Removed [RequestID = b1.c1.102] from SentObjClass

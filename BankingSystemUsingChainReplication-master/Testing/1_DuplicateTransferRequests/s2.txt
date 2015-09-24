@@ -1,0 +1,25 @@
+[2014-11-24 12:11:29 PM] [INFO] Server [s2] Process Started with Process ID : 6611
+[2014-11-24 12:11:29 PM] [INFO] Operating with LifeTime Value of Unbounded
+[2014-11-24 12:11:29 PM] [INFO] Sent First HeartBeat to Master
+[2014-11-24 12:12:05 PM] [INFO] [Receive Seq# = 1] Received Request with [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 12:12:05 PM] [INFO] Deposit Request Complete for [Request ID = b1.c1.100] [Operation = deposit] [Account Number = 100] [Amount = 500.0]
+[2014-11-24 12:12:05 PM] [INFO] [Send Seq# = 1] Sent to Client [Request ID = b1.c1.100] [Outcome = Processed] [AccountNumber = 100] [Balance = 500.0]
+[2014-11-24 12:12:05 PM] [INFO] [Send Seq# = 2] Acknowledgement of [Request =  b1.c1.100] Sent to [s1]
+[2014-11-24 12:12:09 PM] [INFO] [Receive Seq# = 2] Received Request with [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 12:12:09 PM] [INFO] Sent to Master: What is the Head of [b2]
+[2014-11-24 12:12:09 PM] [INFO] Received from Master: Head of [b2] is : [s3]
+[2014-11-24 12:12:09 PM] [INFO] Sent Transfer Request to Destination Bank [b2] with Head [s3]
+[2014-11-24 12:12:09 PM] [INFO] [Send Seq# = 3] Sent to [s3] [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 12:12:09 PM] [INFO] Storing SENTOBJs
+[2014-11-24 12:12:09 PM] [INFO] [Receive Seq# = 3] Received Acknowledgement with b1.c1.101
+[2014-11-24 12:12:09 PM] [INFO] Removed Record with Sequence Number : [2]
+[2014-11-24 12:12:09 PM] [INFO] Removed [RequestID = b1.c1.101] from SentObjClass
+[2014-11-24 12:12:09 PM] [INFO] [Send Seq# = 4] Acknowledgement of [Request =  b1.c1.101] Sent to [s1]
+[2014-11-24 12:12:13 PM] [INFO] [Receive Seq# = 4] Received Request with [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 12:12:13 PM] [INFO] Duplicate Request : [Request ID = b1.c1.101] [Operation = transfer] [Account Number = 100] [Amount = 200.0] [DestBank = b2] [DestAccount = 600]
+[2014-11-24 12:12:13 PM] [INFO] Storing SENTOBJs
+[2014-11-24 12:12:13 PM] [INFO] [Send Seq# = 5] Sent to Client [Request ID = b1.c1.101] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]
+[2014-11-24 12:12:13 PM] [INFO] [Send Seq# = 6] Acknowledgement of [Request =  b1.c1.101] Sent to [s1]
+[2014-11-24 12:12:17 PM] [INFO] [Receive Seq# = 5] [From CLIENT] Received Request with [Request ID = b1.c1.102] [Operation = getBalance] [Account Number = 100] 
+[2014-11-24 12:12:17 PM] [INFO] Query Request Complete for [Request ID = b1.c1.102] [Operation = getBalance] [Account Number = 100] 
+[2014-11-24 12:12:17 PM] [INFO] [Send Seq# = 7] Sent to Client [Request ID = b1.c1.102] [Outcome = Processed] [AccountNumber = 100] [Balance = 300.0]

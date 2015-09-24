@@ -1,0 +1,10 @@
+[2014-11-12 10:23:31 PM] [INFO] Master Process Started with Process ID : 10568
+[2014-11-12 10:23:31 PM] [INFO] Master started listening Server Heartbeats
+[2014-11-12 10:23:31 PM] [INFO] Master started listening Server Notifications
+[2014-11-12 10:23:39 PM] [INFO] Started Serving Chain Extension Request from [s4]
+[2014-11-12 10:23:39 PM] [INFO] [M to s3(CurrentTail)] YOU_ARE_NO_MORE_A_TAIL_NEW_TAIL_IS:s4
+[2014-11-12 10:23:50 PM] [INFO] Received Notification from Prospective New Tail [s4]  that it is ready to take over as Tail. 
+[2014-11-12 10:23:50 PM] [INFO] [b1]'s new chain is: [s1,s2,s3,s4]
+[2014-11-12 10:23:50 PM] [INFO] [M to Clients] UPDATE_NOTIFICATION:b1:s1,s2,s3,s4
+[2014-11-12 10:23:50 PM] [INFO] [M to Clients] UPDATE_NOTIFICATION:b1:s1,s2,s3,s4
+[2014-11-12 10:23:50 PM] [INFO] [M to Clients] UPDATE_NOTIFICATION:b1:s1,s2,s3,s4
